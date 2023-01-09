@@ -1,0 +1,103 @@
+@import './variables.scss';
+
+#project-wrapper {
+  display: flex;
+  height: fit-content;
+  // main layout (no project showing)
+  #project-left {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    position: fixed;
+    left: 0;
+
+    #project-nav {
+      width: 420px;
+      padding: 150px 0 50px 150px;
+      opacity: 0;
+      animation-name: fadeIn;
+      animation-duration: 300ms;
+      animation-delay: 300ms;
+      animation-fill-mode: forwards;
+
+      #intro {
+        margin: 0 0 50px 15px;
+        font-family: serif;
+        font-size: $font-22;
+        opacity: 0.5;
+      }
+    }
+  }
+
+  #project-right {
+    width: 0%;
+    height: fit-content;
+  }
+
+  // project showing
+  &.project-active {
+    #project-left {
+      width: 45%
+    }
+
+    #project-right {
+      width: 55%;
+      height: 100vh;
+      position: fixed;
+      right: 0;
+      overflow-y: scroll;
+
+      .container-right {
+        flex: 1;
+      }
+    }
+  }
+}
+
+@media (max-width: 1325px) {
+  #project-wrapper {
+    #project-left {
+      #project-nav {
+        padding: 150px 0 50px 70px;
+      }
+    }
+    &.project-active {
+      #project-left { width: 40%; }
+      #project-right { width: 60%; }
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  #project-wrapper {
+    &.project-active {
+      #project-left {
+        #project-nav {
+          padding: 150px 0 50px 0;
+          margin: 0 auto;
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+// mobile layout
+@media (max-width: 800px) {
+  #project-wrapper {
+    #project-left {
+      #project-nav {
+        padding: 150px 25px 50px 25px;
+        margin: 0 auto;
+        max-width: calc(100vw - 50px);
+      }
+    }
+    &.project-active {
+      #project-left { display: none; }
+      #project-right {
+        width: 100%;
+        #project-content { padding: 36px 25px 0 25px; }
+      }
+    }
+  }
+}

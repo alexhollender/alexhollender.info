@@ -1,0 +1,29 @@
+@import './variables.scss';
+
+nav#projects {
+  a {
+    display: block;
+    margin: 0 0 40px 0;
+    padding-left: 15px;
+    color: black;
+    text-decoration: none;
+    border-left: 1px solid #ffffff00;
+    cursor: pointer;
+    transition: all 300ms;
+
+    &:hover, &.active {
+      border-left: 1px solid #000;
+      transform: translateX(5px);
+    }
+
+    h3 {
+      font-family: sans-serif;
+      margin-bottom: 4px;
+    }
+
+    p {
+      font-size: $font-17;
+      font-family: serif;
+    }
+  }
+}

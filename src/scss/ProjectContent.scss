@@ -1,0 +1,73 @@
+@import './variables.scss';
+
+#project-content {
+  min-height: 100vh;
+  // top padding is to account for the 150% line height
+  padding: 36px 50px 0 50px;
+  border-left: 1px dotted #cdcdcd;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 300ms;
+  animation-delay: 300ms;
+  animation-fill-mode: forwards;
+
+  h1 {
+    font-family: sans-serif;
+  }
+
+  p {
+    max-width: 850px;
+    line-height: 150%;
+    font-size: $font-18;
+    & + p { margin-top: 10px; }
+  }
+
+  img {
+    max-width: 100%;
+    margin: 30px 0;
+  }
+
+  video {
+    width: 100%;
+    border: 1px solid lightgray;
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.15);
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.15);
+  }
+
+  span {
+    font-size: 14px;
+    font-style: italic;
+  }
+
+  #howlerz {
+    video { margin: 30px 0; }
+    .links {
+      display: flex;
+      flex-direction: column;
+      a { width: max-content; }
+    }
+  }
+
+  #cooking-timers {
+    img { border: 1px solid lightgray; }
+  }
+
+  #dispose, #wiki-kids {
+    img { margin: 50px 0; }
+    video { min-width: 300px; }
+  }
+
+  #wiki-kids {
+    #intro {
+      max-width: 850px;
+      margin: 30px 0;
+    }
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 0 50px 0;
+      .left { margin-right: 50px; }
+      p { margin-bottom: 10px; }
+    }
+  }
+}

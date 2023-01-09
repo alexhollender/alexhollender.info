@@ -1,0 +1,21 @@
+@import './variables.scss';
+
+#project-header {
+  justify-content: flex-start;
+  background: #fff;
+  border-bottom: 1px dotted #cdcdcd;
+  padding-bottom: 10px;
+  transform: translateY(-100%);
+  animation-name: slideDown;
+  animation-duration: 200ms;
+  animation-fill-mode: forwards;
+
+  #back-button {
+    margin-left: 30px;
+    color: gray;
+  }
+  #project-title {
+    margin-left: 377px;
+    color: gray;
+  }
+}

@@ -1,0 +1,17 @@
+@import './variables.scss';
+
+#about-me-page {
+  width: 50%;
+  transition: all 100ms ease;
+
+  #about-me-content {
+    width: 420px;
+    margin: 140px auto 50px auto;
+    transition: all 100ms ease;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 300ms;
+    animation-delay: 300ms;
+    animation-fill-mode: forwards;
+  }
+}
