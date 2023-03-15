@@ -3,7 +3,7 @@
 #project-content {
   min-height: 100vh;
   // top padding is to account for the 150% line height
-  padding: 36px 50px 0 50px;
+  padding: 50px 50px 0 50px;
   border-left: 1px dotted #cdcdcd;
   opacity: 0;
   animation-name: fadeIn;
@@ -11,18 +11,18 @@
   animation-delay: 300ms;
   animation-fill-mode: forwards;
 
-  h1 {
-    font-family: sans-serif;
-  }
-
-  p {
+  p, ul {
     max-width: 850px;
     line-height: 150%;
     font-size: $font-18;
     & + p { margin-top: 10px; }
   }
 
-  img {
+  ul {
+    padding: revert;
+  }
+
+  img, video {
     max-width: 100%;
     margin: 30px 0;
   }

@@ -21,6 +21,14 @@ header {
   font-family: vcr;
   font-size: $font-14;
 
+  &.mini {
+    width: auto;
+    display: block;
+    position: initial;
+    margin: 20px 0 0 30px;
+    padding: 0;
+  }
+
   a, div { transition: color 200ms; }
 
   a {

@@ -12,7 +12,6 @@ const App = () => {
     <>
     <Header detail={projectPath} />
 
-    {/* tell the main element if a project is active */}
     <main>
       {/* renders project, about me, etc. */}
       {/* context only if the URL has a :projectPath */}

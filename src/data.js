@@ -1,4 +1,4 @@
-import WikiDip from './projects/WikiDip';
+import Wiki2023 from './projects/Wiki2023';
 import Howlerz from './projects/Howlerz';
 import CookingTimers from './projects/CookingTimers';
 import Dispose from './projects/Dispose';
@@ -10,9 +10,9 @@ import Misc from './projects/Misc';
 
 let projects = [
   {
-    path: 'wiki-dip',
-    component: WikiDip,
-    name: 'Wikipedia: desktop improvements project',
+    path: 'wiki-2023',
+    component: Wiki2023,
+    name: 'Wikipedia 2023 redesign',
     description: 'various improvements to the desktop interface of Wikipedia'
   },
   {

@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from './Root';
 import Project from './Project';
+import Wikipedia2023 from './Wikipedia2023';
 import AboutMe from './AboutMe';
 import ErrorPage from './ErrorPage';
 import './scss/index.scss';
@@ -16,14 +17,18 @@ const router = createBrowserRouter([
       { index: true, element: <Project /> },
       {
         path: "/:projectPath",
-        element: <Project />,
+        element: <Project />
       },
       {
-        path: "about",
-        element: <AboutMe />,
+        path: "aboutme",
+        element: <AboutMe />
       }
-    ],
+    ]
   },
+  {
+    path: "wikipedia-2023-redesign",
+    element: <Wikipedia2023 />
+  }
 ]);
 
 createRoot(document.getElementById("root")).render(
