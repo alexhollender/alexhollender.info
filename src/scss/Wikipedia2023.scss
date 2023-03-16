@@ -23,7 +23,7 @@
   h3 {
     font-size: 24px;
     line-height: 1.8;
-    margin-top: 20px;
+    margin: 20px 0 6px 0;
   }
 
   p, ul, details {
@@ -45,9 +45,25 @@
   details, summary { margin: 20px 0; }
   summary { cursor: pointer; }
 
+  @media (max-width: 1000px) {
+    details { display: none; }
+  }
+
+  table {
+    text-align: left;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+
+  table, th, td { border: 1px solid black; }
+
+  th, td {
+    padding: 4px;
+  }
+
   #credits {
     font-size: 14px;
-    opacity: 0.5;
+    opacity: 0.6;
 
     ul { 
       padding: 0;

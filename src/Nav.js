@@ -2,21 +2,20 @@ import React, { useEffect } from 'react';
 import { NavLink } from "react-router-dom";
 import NavItem from "./NavItem";
 import { getProjects } from "./data";
+import { isInViewport } from './functions';
 import './scss/Nav.scss';
 
 const Nav = () => {
 
   let projects = getProjects();
 
-  // when component mounts & updates
   useEffect(() => {
-    // if deeplinked to a specific project
-    // scroll nav list so selected project is in view
-    const navListElem = document.getElementsByClassName('nav-item');
-    for (const item of navListElem) {
-      if (item.classList.contains('active')) {
-          item.scrollIntoView()
-      }
+    // for cases where deeplinked to a specific project...
+    const elem = document.querySelector('.active');
+    // check if active project link in sidebar nav isn't in viewport
+    if (elem && !isInViewport(elem)) {
+      // scroll nav list so selected project is in view
+      elem.scrollIntoView()
     }
   }, []);
 

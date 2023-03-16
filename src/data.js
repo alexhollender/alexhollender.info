@@ -1,11 +1,11 @@
 import Wiki2023 from './projects/Wiki2023';
-import Howlerz from './projects/Howlerz';
+import WikipediaForKids from './projects/WikipediaForKids';
 import CookingTimers from './projects/CookingTimers';
 import Dispose from './projects/Dispose';
+import CreateBuildDestroy from './projects/CreateBuildDestroy';
+import Howlerz from './projects/Howlerz';
 import Onia from './projects/Onia';
 import AltSchool from './projects/AltSchool';
-import CreateBuildDestroy from './projects/CreateBuildDestroy';
-import WikipediaForKids from './projects/WikipediaForKids';
 import Misc from './projects/Misc';
 
 let projects = [
@@ -28,12 +28,6 @@ let projects = [
     description: 'a basic timer tool, built with react.js'
   },
   {
-    path: 'howlerz',
-    component: Howlerz,
-    name: 'Howlerz',
-    description: 'a website where people bought the Howlerz digital art collection'
-  },
-  {
     path: 'dispose',
     component: Dispose,
     name: 'DISPOSE',
@@ -44,6 +38,12 @@ let projects = [
     component: CreateBuildDestroy,
     name: 'Create Build Destroy',
     description: 'a clothing company i ran with a few friends in college'
+  },
+  {
+    path: 'howlerz',
+    component: Howlerz,
+    name: 'Howlerz',
+    description: 'a website where people bought the Howlerz digital art collection'
   },
   {
     path: 'altschool',

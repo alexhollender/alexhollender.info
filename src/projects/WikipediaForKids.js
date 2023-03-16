@@ -9,7 +9,7 @@ const WikipediaForKids = () => {
 
   return (
     <>
-    <p><a href="en.wikipedia.org" target="_blank" rel="noreferrer">Wikipedia</a> is a free encylopedia created by volunteers around the world. While it aims to provide <i>everyone</i> with all of the world's knowlege, it is often text-heavy, and written at a high school/college reading level. So what about visual learners, and/or younger learners? During some down time while I was working at the <a href="wikipediafoundation.org" target="_blank" rel="noreferrer">Wikimedia Foundation</a> I sketched out & prototyped some ideas for how we might better support those learners.</p>
+    <p><a href="en.wikipedia.org" target="_blank" rel="noreferrer">Wikipedia</a> is a free encylopedia created by volunteers around the world. While it aims to provide <i>everyone</i> with all of the world's knowlege, it is often text-heavy, and written at a high school/college reading level. So what about younger learners, and/or visual learners? During some down time while I was working at the <a href="wikipediafoundation.org" target="_blank" rel="noreferrer">Wikimedia Foundation</a> I sketched out & prototyped some ideas for how we might better support those learners.</p>
     <video id="intro" controls width="100%">
       <source src={overviewWebm} type="video/webm" />
       <source src={overviewMp4} type="video/mp4" />
