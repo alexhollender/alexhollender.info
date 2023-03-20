@@ -201,7 +201,7 @@ function Wikipedia2023() {
           
           <p>The positive outcome of the RfC was probably a mix of all of those things, but we won’t really ever know how/why we arrived there, which is bothersome to me. I was happy to see some small discussions within the RfC regarding the validity of the RfC process for making such large decisions, as well as some people commenting on the lack of reader participation. In general I think it also highlighted both the lack of alignment in terms of development priorities between some of the community members and the Wikimedia Foundation, and the need for more analytics and data. I have many more thoughts on ways we might evolve the RfC process, and the systems of governance on Wikipedia in general, which I’ll save for another time.</p>
 
-          <p>(Addendum: after the launch some people on English Wikipedia started another RfC, about rolling back the redesign. You can read all 238,758 words of that RfC <a href="https://en.wikipedia.org/wiki/Wikipedia:Requests_for_comment/Rollback_of_Vector_2022" target="_blank">here</a>. For context: <i>Moby Dick</i> is 209,117 words.)</p>
+          <p>(Addendum: after the launch some people on English Wikipedia started another RfC, about rolling back the redesign. Two months later it was closed with no consensus to roll back. You can read all 238,758 words of it <a href="https://en.wikipedia.org/wiki/Wikipedia:Requests_for_comment/Rollback_of_Vector_2022" target="_blank">here</a>. For context: <i>Moby Dick</i> is 209,117 words.)</p>
         </section>
 
         <section>
@@ -218,7 +218,7 @@ function Wikipedia2023() {
         </section>
 
         <section>
-          <h3>Explosing the system</h3>
+          <h3>Exposing the system</h3>
           <p>Have you ever wondered whether or not a Wikipedia article was accurate, or more generally if you can trust Wikipedia? What many people don’t understand is that Wikipedia articles <a href="https://en.wikipedia.org/wiki/Wikipedia:No_original_research" target="_blank">don’t contain original thoughts or opinions</a>. In a sense they aren’t even really “written”, or at least not in the way that someone might write an essay or a poem. Instead Wikipedia articles are collages of facts that credible researchers have published about a given topic elsewhere. Think of an article like puzzle, or a quilt, with each piece being a fact about the topic that was previously published by a credible institution. With this in mind it becomes clear that any Wikipedia article is only as accurate as the sources from which the facts were gathered. You can of course question the motives or skill level of the editors, who are the ones going out, gathering the facts, and then weaving them together into coherent articles. But ultimately Wikipedia is a container filled with facts, rather than a blank page upon which people have written whatever they want about a topic.</p>
 
           <p>During the project we became interested in how the interface could better communicate this meta-information about Wikipedia articles. How might we help people understand that editors are more fact-gatherers than authors, that they have long, involved disputes over whether or not a source was credible, and that they actively watch articles in order to ensure that any information added to them was coming from a credible source? How could we expose this dynamic, living system, that is currently nearly invisible to most readers, in a way that would empower them to better evaluate the credibility of a given article, and ultimately position them to be participants, rather than consumers? What if the “reading experience” of Wikipedia wasn’t just about reading the content, but also being able to <i>read</i> an article in this meta way? Could we help people grow from being <i>content readers</i>, to more <i>informed readers</i>? Partly inspired by the <a href="https://winter.toolforge.org/" target="_blank">Winter prototype</a>, I made some sketches of Wikipedia articles that included various pieces of metadata, which might serve as little clues as to what was going on. I then thought about some kind of article activity & metadata summary, that would quickly give people a sense of the state of an article with regards to editor activity, as well as completeness/credibility.</p>
@@ -249,6 +249,7 @@ function Wikipedia2023() {
             <li>Roy Tatum</li>
             <li>Frank Chimero</li>
             <li>Kieran McCan</li>
+            <li>Volker E.</li>
             <li>Matthew Williams</li>
             <li>Quiddity (Nick Wilson)</li>
             <li>TheDJ (Derk-Jan Hartman)</li>
