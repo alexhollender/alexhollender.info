@@ -26,6 +26,8 @@
   img, video {
     max-width: 100%;
     margin: 30px 0;
+
+    &.border { border: 1px solid lightgray; }
   }
 
   video {
@@ -47,10 +49,6 @@
       flex-direction: column;
       a { width: max-content; }
     }
-  }
-
-  #cooking-timers {
-    img { border: 1px solid lightgray; }
   }
 
   #dispose, #wiki-kids {

@@ -1,5 +1,6 @@
 import Wiki2023 from './projects/Wiki2023';
 import WikipediaForKids from './projects/WikipediaForKids';
+import IngredientSubstitutions from './projects/IngredientSubstitutions';
 import CookingTimers from './projects/CookingTimers';
 import Dispose from './projects/Dispose';
 import CreateBuildDestroy from './projects/CreateBuildDestroy';
@@ -22,10 +23,16 @@ let projects = [
     description: 'explorations of making Wikipedia more accessible for younger learners'
   },
   {
+    path: 'ingredient-substitutions',
+    component: IngredientSubstitutions,
+    name: 'Ingredient substitutions',
+    description: 'a simple tool for looking up ingreident substitutions. database (algolia) + front-end (react)'
+  },
+  {
     path: 'cooking-timers',
     component: CookingTimers,
     name: 'Cooking timers',
-    description: 'a basic timer tool, built with react.js'
+    description: 'a basic timer tool, built with react'
   },
   {
     path: 'dispose',

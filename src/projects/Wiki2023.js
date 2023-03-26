@@ -6,12 +6,14 @@ import vector2022_gif from '../media/wikidip/vector2022.gif';
 import dipGif from '../media/wikidip/dip.gif';
 import dipComputer from '../media/wikidip/dip-computer.png';
 import languagesGraphic from '../media/wikidip/318languages.jpg';
+import contentSeparationMp4 from '../media/wiki2023/content-separation.mp4';
+import contentSeparationWebM from '../media/wiki2023/content-separation.webm';
 
 const Wiki2023 = () => {
 
   return (
     <>
-    <p>In 2018 I joined the <a href="https://wikimediafoundation.org" target="_blank" rel="noreferrer">Wikimedia Foundation</a> as a designer working on the reading experience of <a href="https://en.wikipedia.org/wiki/Blues" target="_blank" rel="noreferrer">Wikipedia</a>. In 2019 our team got tasked with making significant improvements to the desktop interface, which hadn't changed much since 2004. I led the redesign, which launched in January, 2023.</p>
+    <p>As a staff member of the <a href="https://wikimediafoundation.org" target="_blank" rel="noreferrer">Wikimedia Foundation</a>, I led the 2023 redesign of the Wikipedia desktop interface. Our team began the project in April, 2020, and launched in January, 2023.</p>
 
     <p>
       <ul>
@@ -30,6 +32,11 @@ const Wiki2023 = () => {
     <img src={dipComputer} width="1200" />
     <img src={dipGif} width="1200" />
     <img src={languagesGraphic} width="1200" />
+    <video controls width="100%" autoPlay={true} muted={true} loop={true}>
+      <source src={contentSeparationWebM} type="video/webm" />
+      <source src={contentSeparationMp4} type="video/mp4" />
+      Sorry, your browser doesn't support embedded videos.
+    </video>
     </>
   )
 }
