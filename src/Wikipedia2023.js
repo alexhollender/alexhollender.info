@@ -110,7 +110,7 @@ function Wikipedia2023() {
 
           <p>When the project started I built a <a href="https://vector-2022.web.app/Moss" target="_blank">base prototype</a> (<a href="https://github.com/alexhollender/wikipedia-prototype" target="_blank">code</a>), which was the Wikipedia interface hooked up to a few APIs so I could load any article (with its table of contents), in any language, as well as use the search box and get live search suggestions. I then added the ability to switch the interface itself (all of the buttons, links, etc.) to various languages. For each feature/design decision I would build a new prototype on top of that base, exploring the question(s) at hand. The prototypes often included a little settings panel in the bottom corner that allowed you to toggle between the various options being explored. Here is a relatively simple one that explores various ways of indicating the active section in the table of contents (<a href="https://di-visual-design-toc-active.web.app/Okapi" target="_blank">link</a>):</p> 
           
-          <video controls width="100%" autoPlay={true} muted={true} loop={true}>
+          <video controls width="100%" autoPlay muted loop playsInline>
             <source src={prototypeWebm} type="video/webm" />
             <source src={prototypeMp4} type="video/mp4" />
             Sorry, your browser doesn't support embedded videos.
@@ -150,7 +150,7 @@ function Wikipedia2023() {
 
           <p>We brought this thinking, as well as a <a href="https://di-visual-design-borders-bgs.web.app/Zebra" target="_blank">prototype</a> with various options for separating the parts of the interface, to the community. Some people felt that the reading experience, as well as the general comprehension of the interface, would benefit from more clear visual separation between the various regions. We have not yet reached a conclusion about this, but there’s a great discussion you can read through, and participate in, <a href="https://phabricator.wikimedia.org/T259240" target="_blank">here</a>.</p>
 
-          <video controls width="100%" autoPlay={true} muted={true} loop={true}>
+          <video controls width="100%" autoPlay muted loop playsInline>
             <source src={contentSeparationWebM} type="video/webm" />
             <source src={contentSeparationMp4} type="video/mp4" />
             Sorry, your browser doesn't support embedded videos.

@@ -15,7 +15,7 @@ const Howlerz = () => {
     <p className="links">
       <a href="https://howlerz.io" target="_blank" rel="noreferrer">howlerz.io</a>
     </p>
-    <video controls width="100%" autoPlay={true} muted={true} loop={true}>
+    <video controls width="100%" autoPlay muted loop playsInline>
       <source src={videoWebm} type="video/webm" />
       <source src={videoMp4} type="video/mp4" />
       Sorry, your browser doesn't support embedded videos.

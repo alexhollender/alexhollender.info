@@ -24,7 +24,7 @@ const Wiki2023 = () => {
     </p>
     
     <img src={wikipediaRedesign} width="1200" />
-    <video controls width="100%" autoPlay={true} muted={true} loop={true}>
+    <video controls width="100%" autoPlay muted loop playsInline>
       <source src={vector2022_webM} type="video/webm" />
       <source src={vector2022_mp4} type="video/mp4" />
       <img src={vector2022_gif} />
@@ -32,7 +32,7 @@ const Wiki2023 = () => {
     <img src={dipComputer} width="1200" />
     <img src={dipGif} width="1200" />
     <img src={languagesGraphic} width="1200" />
-    <video controls width="100%" autoPlay={true} muted={true} loop={true}>
+    <video controls width="100%" autoPlay muted loop playsInline>
       <source src={contentSeparationWebM} type="video/webm" />
       <source src={contentSeparationMp4} type="video/mp4" />
       Sorry, your browser doesn't support embedded videos.
