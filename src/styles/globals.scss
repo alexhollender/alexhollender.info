@@ -15,4 +15,16 @@ h1, h2, h3, p {
   font-size: unset;
 }
 
-.wrapper { display: flex; }
+.wrapper { 
+  display: flex;
+  animation: fadeIn 800ms ease-in-out 800ms forwards; 
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

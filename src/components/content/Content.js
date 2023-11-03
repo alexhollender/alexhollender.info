@@ -5,7 +5,6 @@ import s from './content.module.scss'
 
 export default function Content({ children }) {
   const segment = useSelectedLayoutSegment()
-  console.log(segment)
   const pageType = getPageType(segment)
 
   return (

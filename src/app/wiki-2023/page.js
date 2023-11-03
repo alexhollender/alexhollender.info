@@ -1,7 +1,11 @@
 import Content from "@/components/content/Content"
 import Link from "next/link"
 import Image from "next/image"
-import comingSoon from '../../../public/media/wiki-2023/comingsoon.jpg'
+import comingSoon from '@public/media/wiki-2023/comingsoon.jpg'
+import dipComp from '@public/media/wiki-2023/dip-computer.png'
+import underConstruction from '@public/media/wiki-2023/underconstruction.gif'
+import languages from '@public/media/wiki-2023/318languages.jpg'
+
 
 export default function Wiki2023() {
   return(
@@ -15,6 +19,19 @@ export default function Wiki2023() {
           src={comingSoon}
           alt="Poster for the release of Vector 2022"
           placeholder="blur"
+        />
+        <Image 
+          src={dipComp}
+          alt="Graphic of computer with in-progress interface"
+          placeholder="blur"
+        />
+        <Image 
+          src={underConstruction}
+          alt="Under construction graphic"
+        />
+        <Image 
+          src={languages}
+          alt="318+ languages of Wikipedia graphic"
         />
       </section>
     </>

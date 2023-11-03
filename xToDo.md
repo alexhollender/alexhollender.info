@@ -1,3 +1,4 @@
+[x] fade in
 [] Image slider on homepage
 [] Try blob media storage in Vercel
 
