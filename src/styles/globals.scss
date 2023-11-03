@@ -1,0 +1,18 @@
+// BASE ELEMENTS
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: sans-serif;
+  line-height: 150%;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  font-size: unset;
+}
+
+.wrapper { display: flex; }

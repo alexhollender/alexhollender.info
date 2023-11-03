@@ -1,0 +1,38 @@
+.header {
+  width: 100vw;
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-family: var(--font-vcr);
+  line-height: initial;
+  text-align: center;
+}
+
+.left, .center, .right {
+  background-color: #ffffff;
+}
+
+.header a {
+  color: #000000;
+  text-decoration: none;
+}
+
+// hide `Back` label by default
+.left span { display: none; }
+
+.header.project {
+  @media (max-width: 1000px) {
+    // show `Back` label below 1000px on project pages
+    .left h1 { display: none; }
+    .left span { display: initial; }
+    // hide `About`
+    .right { display: none; }
+  }
+}
+
+
+.header.project p { display: none; }
