@@ -13,11 +13,11 @@
 }
 
 .left, .center, .right {
-  background-color: #ffffff;
+  background-color: var(--page-bg);
 }
 
 .header a {
-  color: #000000;
+  color: var(--black);
   text-decoration: none;
 
   &:hover {

@@ -6,7 +6,8 @@
 .aside.home { width: 100%; }
 
 .aside.project { 
-  width: 45%;
+  width: 42%;
+  border-right: 1px solid var(--gray-border);
   
   @media (max-width: 1000px) {
     display: none;
@@ -39,14 +40,14 @@
   margin-bottom: 10px;
   font-family: serif;
   font-size: 19px;
-  color: #808080;
+  color: var(--gray-text);
   border-left: 1px solid transparent;
 }
 
 .item { 
   max-width: 420px;
   text-decoration: none;
-  color: #000;
+  color: var(--black);
   transition: transform 300ms;
 }
 
@@ -55,6 +56,6 @@
 .item:hover, .item.active {
   @media (min-width: 700px) {
     transform: translateX(5px);
-    border-left: 1px solid black;
+    border-left: 1px solid var(--black);
   }
 }

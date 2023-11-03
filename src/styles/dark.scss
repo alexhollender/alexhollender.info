@@ -1,0 +1,12 @@
+:root:has([data-theme-dark="true"]) {
+  // changes to color variables
+  --black: #fff;
+  --white: #000;
+  --gray-text: #b1b1b1;
+  --gray-border: #333;
+  --page-bg: #1b1b1b;
+  
+  // general settings
+  background-color: var(--page-bg);
+  color: var(--black);
+}

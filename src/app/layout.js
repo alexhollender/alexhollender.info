@@ -1,7 +1,10 @@
 import '../styles/globals.scss'
+import '../styles/variables.scss'
+import '../styles/dark.scss'
 import Header from '@/components/header/Header'
 import Nav from '@/components/nav/Nav'
 import Content from '@/components/content/Content'
+import DarkModeToggle from '@/components/darkModeToggle/DarkModeToggle'
 import { vcrOsdMono } from '@/utils/fonts'
 
 export const metadata = {
@@ -18,6 +21,7 @@ export default function RootLayout({ children }) {
           <Nav />
           <Content>{children}</Content>
         </div>
+        <DarkModeToggle />
       </body>
     </html>
   )

@@ -15,9 +15,12 @@ h1, h2, h3, p, ul {
   font-size: unset;
 }
 
+a { color: var(--black); }
+a:visited { color: var(--black); }
+
 ::selection {
-  background: #000000;
-  color: #ffffff;
+  background: var(--black);
+  color: var(--white);
 }
 
 .wrapper { 
@@ -33,3 +36,5 @@ h1, h2, h3, p, ul {
     opacity: 1;
   }
 }
+
+#darkMode { display: none; }
