@@ -1,6 +1,11 @@
 [x] fade in
+[x] about page
+[] dark mode
+[] DIP blog post
+[] use variables to standardize side padding across pages 
 [] Image slider on homepage
 [] Try blob media storage in Vercel
+[] text highlight color
 
 states to check:
 - home, mobile

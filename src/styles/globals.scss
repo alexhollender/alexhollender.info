@@ -10,9 +10,14 @@ body {
   line-height: 150%;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, ul {
   margin: 0;
   font-size: unset;
+}
+
+::selection {
+  background: #000000;
+  color: #ffffff;
 }
 
 .wrapper { 

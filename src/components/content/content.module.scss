@@ -1,18 +1,18 @@
-.content { padding-top: 75px; }
+.content { 
+  padding-top: 75px; 
+}
 
-.content.home { 
-  position: absolute;
-  right: 20px;
+.content.project, .content.noNav {
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 50px;
 }
 
 .content.project { 
   width: 55%;
   height: 100vh;
   overflow-y: scroll;
-  padding-right: 50px;
-  padding-left: 50px;
-  padding-bottom: 50px;
-
+  
   @media (max-width: 1000px) {
     width: 100%;
   }
@@ -21,9 +21,23 @@
 // for About and Notes routes
 .content.noNav { width: 100%; }
 
+// homepage slideshow
+.content.home { 
+  position: absolute;
+  right: 20px;
+}
+
+.content section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 18px;
+}
+
 .content {
   img, video {
     width: 100%;
     height: auto;
+    margin: 10px 0;
   }
 }
