@@ -1,0 +1,15 @@
+.aspectRatioBox {
+  height: 0;
+  padding-top: 62.5%;
+  position: relative;
+  overflow: hidden;
+}
+
+.aspectRatioBox > div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}

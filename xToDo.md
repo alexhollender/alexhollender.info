@@ -1,11 +1,16 @@
 [x] fade in
 [x] about page
-[] dark mode
+[x] dark mode
+[x] text highlight color
+[] projects
+  [x] wiki 2023
+  [x] wiki for kids
+  [] Ingredient subsitutions
 [] DIP blog post
 [] use variables to standardize side padding across pages 
 [] Image slider on homepage
 [] Try blob media storage in Vercel
-[] text highlight color
+
 
 states to check:
 - home, mobile
