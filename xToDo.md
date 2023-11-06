@@ -6,8 +6,9 @@
   [x] wiki 2023
   [x] wiki for kids
   [x] Ingredient subsitutions
-  [] Cooking timers
-  [] AltSchool
+  [x] Cooking timers
+  [x] AltSchool
+  [x] DISPOSE
 [] Metadata
 [] DIP blog post
 [] use variables to standardize side padding across pages 
