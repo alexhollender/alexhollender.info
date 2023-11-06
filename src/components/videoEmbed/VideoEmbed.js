@@ -8,7 +8,7 @@ export default function VideoEmbed({ url }) {
   );
   
   return (
-    <div className={s.aspectRatioBox}>
+    <div className={`${s.aspectRatioBox} shadow`}>
       <ReactPlayer 
         url={url}
         width="100%"

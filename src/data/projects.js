@@ -2,27 +2,27 @@ export const projects = [
   {
     path: 'wiki-2023',
     name: 'Wikipedia 2023 redesign',
-    description: 'various improvements to the desktop interface of Wikipedia'
+    description: 'Various improvements to the desktop interface of Wikipedia'
   },
   {
     path: 'wiki-kids',
     name: 'Wikipedia for younger learners',
-    description: 'explorations of making Wikipedia more accessible for younger learners'
+    description: 'Explorations of making Wikipedia more accessible for younger learners'
   },
   {
     path: 'ingredient-substitutions',
     name: 'Ingredient substitutions',
-    description: 'a simple tool for looking up ingreident substitutions. database (algolia) + front-end (react)'
+    description: 'A basic ingreident substitution lookup tool'
   },
   {
     path: 'cooking-timers',
     name: 'Cooking timers',
-    description: 'a basic timer tool, built with react'
+    description: 'A basic timer tool'
   },
   {
     path: 'altschool',
     name: 'AltSchool',
-    description: 'an education technology startup i worked for in san francisco'
+    description: 'An education technology startup I worked for in San Francisco'
   },
   {
     path: 'dispose',

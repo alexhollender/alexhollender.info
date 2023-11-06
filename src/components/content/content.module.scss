@@ -40,4 +40,9 @@
     height: auto;
     margin: 10px 0;
   }
+
+  video, :global(.shadow) {
+    border-radius: 6px;
+    box-shadow: var(--video-shadow);
+  }
 }

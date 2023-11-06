@@ -5,7 +5,10 @@
 [] projects
   [x] wiki 2023
   [x] wiki for kids
-  [] Ingredient subsitutions
+  [x] Ingredient subsitutions
+  [] Cooking timers
+  [] AltSchool
+[] Metadata
 [] DIP blog post
 [] use variables to standardize side padding across pages 
 [] Image slider on homepage
