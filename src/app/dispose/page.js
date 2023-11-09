@@ -1,6 +1,7 @@
 import { importAll, removeDuplicates } from "@/utils/mediaImports"
 import Image from "next/image"
-const mediaArray = importAll(require.context('@public/media/dispose/images', true, /\.(png|jpe?g|gif|svg)$/));
+import ImageWrapper from "@/components/imageWrapper/ImageWrapper"
+const mediaArray = importAll(require.context('@public/media/dispose/images', true, /\.(png|jpe?g|gif|svg)$/))
 import camera from '@public/media/dispose/dispose_01.jpg'
 
 export default function Dispose() {
@@ -20,14 +21,11 @@ export default function Dispose() {
         <source src="https://alexhollender-97463.firebaseapp.com/static/media/dispose_website.ecdb9ad01e6fbfdaf611.mp4" type="video/mp4" />
       </video>
       {media.map((item, index) =>
-        <Image 
-          key={index}
-          src={item.src}
-          width={item.width}
-          height={item.height}
-          alt="Image of AltSchool work"
-          placeholder="blur"
-          blurDataURL={item.blurDataURL}
+        <ImageWrapper 
+          key={item.src}
+          item={item}
+          project="DISPOSE"
+          index={index}
         />
       )}
     </section>

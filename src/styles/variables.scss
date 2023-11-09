@@ -1,8 +1,9 @@
 :root {
   --black: #000;
-  --white: #fff;
+  --white: 255, 255, 255;
   --gray-text: #808080;
   --gray-border: #ddd;
   --page-bg: var(--white);
+  --page-bg-trans: rgba(var(--white), 0.75);
   --video-shadow: 0 5px 15px 0 rgba(0,0,0,.1);
 }

@@ -13,7 +13,10 @@
 }
 
 .left, .center, .right {
-  background-color: var(--page-bg);
+  background-color: var(--page-bg-trans);
+  backdrop-filter: blur(10px);
+  border-radius: 2px;
+  padding: 2px;
 }
 
 .header a {
