@@ -1,39 +1,40 @@
-.content { 
-  padding-top: 50px; 
-}
-
-.content.project, .content.noNav {
-  padding-right: 50px;
-  padding-left: 50px;
-  padding-bottom: 50px;
-}
-
+// PROJECT
 .content.project { 
   width: 58%;
   height: 100vh;
   overflow-y: scroll;
   
+  // on mobile, take up entire column
   @media (max-width: 1000px) {
     width: 100%;
   }
 }
 
-// for About and Notes routes
-.content.noNav { width: 100%; }
-
-// homepage slideshow
-.content.home { 
-  position: absolute;
-  right: 20px;
-  width: 40%;
-  max-width: 500px;
+.content.project section {
+  margin-left: var(--margin-inner);
+  margin-right: var(--margin-inner);
 }
+
+// ABOUT & NOTES
+.content.noNav { 
+  width: 100%;
+}
+
+.content.noNav section {
+  margin-left: var(--margin-outer);
+  margin-right: var(--margin-outer);
+}
+
+// HOMEPAGE
+.content.home { display: none; }
 
 .content section {
   display: flex;
   flex-direction: column;
   gap: 20px;
   font-size: 18px;
+  margin-top: var(--margin-top);
+  margin-bottom: var(--margin-bottom);
 }
 
 .content {

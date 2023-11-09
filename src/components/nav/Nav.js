@@ -3,6 +3,7 @@ import { useSelectedLayoutSegment } from 'next/navigation'
 import getPageType from '@/utils/getPageType'
 import { projects } from '@/data/projects'
 import Link from 'next/link'
+import Gallery from "@/components/gallery/Gallery"
 import s from './nav.module.scss'
 
 export default function Nav() {
@@ -25,6 +26,7 @@ export default function Nav() {
           </Link>
         )}
       </nav>
+      <Gallery />
     </aside>
   )
 }

@@ -12,11 +12,13 @@
   [x] Howlerz
   [x] Onia
   [x] CBD
-  [] Misc
+  [x] Misc
+[x] Image slider on homepage
+[x] homepage on mobile
+  [x] use variables to standardize side padding across pages
+[] add previous image button on <Gallery>
 [] Metadata
 [] DIP blog post
-[] use variables to standardize side padding across pages 
-[] Image slider on homepage
 [] Try blob media storage in Vercel
 
 
