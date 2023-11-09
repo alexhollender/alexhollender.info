@@ -1,7 +1,7 @@
-import Content from "@/components/content/Content"
+import Gallery from "@/components/gallery/Gallery"
 
 export default function Home() {
   return (
-    <div>homepage</div>
+    <Gallery />
   )
 }
