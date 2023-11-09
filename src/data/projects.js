@@ -1,5 +1,10 @@
 export const projects = [
   {
+    path: 'abcd',
+    name: 'test',
+    description: 'tttttt'
+  },
+  {
     path: 'wiki-2023',
     name: 'Wikipedia 2023 redesign',
     description: 'Various improvements to the desktop interface of Wikipedia (lead designer)'

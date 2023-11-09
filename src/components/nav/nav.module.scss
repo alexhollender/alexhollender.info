@@ -4,8 +4,7 @@
   margin-left: var(--margin-outer);
 }
 
-.aside.home { width: 100%; }
-
+// PROJECT
 .aside.project { 
   width: 42%;
   border-right: 1px solid var(--gray-border);
@@ -15,6 +14,16 @@
   }
 }
 
+.aside.project :global(.gallery) {
+  display: none;
+}
+
+// HOME
+.aside.home { 
+  width: 100%;
+ }
+
+// ABOUT & NOTES
 .aside.noNav { display: none; }
 
 .nav {

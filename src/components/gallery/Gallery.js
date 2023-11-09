@@ -41,7 +41,7 @@ export default function Gallery() {
   const nextImage = media[randomSeries[(count + 1) % media.length]] || {};
 
   return (
-    <div className={s.gallery}>
+    <div className={`${s.gallery} gallery`}>
       <div className={s.controls}>
         <div className={s.previous} onClick={imgNext}></div>
         <div className={s.next} onClick={imgPrev}></div>

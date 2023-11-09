@@ -18,6 +18,7 @@
   [x] use variables to standardize side padding across pages
 [x] add previous image button on <Gallery>
 [] Metadata
+[] fix hover interaction on nav items
 [] DIP blog post
 [] Try blob media storage in Vercel
 
