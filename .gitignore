@@ -34,5 +34,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# media
-/public/media/
+# media (need to have media in GitHub so it's availble to Vercel)
+# /public/media/
