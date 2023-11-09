@@ -16,7 +16,7 @@
 [x] Image slider on homepage
 [x] homepage on mobile
   [x] use variables to standardize side padding across pages
-[] add previous image button on <Gallery>
+[x] add previous image button on <Gallery>
 [] Metadata
 [] DIP blog post
 [] Try blob media storage in Vercel

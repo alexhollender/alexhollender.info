@@ -29,8 +29,12 @@ export default function Gallery() {
     setRandomSeries(shuffleArray(initialArray));
   }, []);
 
-  function changeImage() {
+  function imgNext() {
     setCount((prevCount) => (prevCount + 1) % media.length);
+  }
+
+  function imgPrev() {
+    setCount((prevCount) => (prevCount - 1 + media.length) % media.length);
   }
 
   const currentImage = media[randomSeries[count]] || {};
@@ -38,6 +42,10 @@ export default function Gallery() {
 
   return (
     <div className={s.gallery}>
+      <div className={s.controls}>
+        <div className={s.previous} onClick={imgNext}></div>
+        <div className={s.next} onClick={imgPrev}></div>
+      </div>
       {randomSeries.length > 0 && (
         <>
           <Image
@@ -46,7 +54,6 @@ export default function Gallery() {
             height={currentImage.height}
             alt={extractFileName(currentImage.src)}
             priority
-            onClick={changeImage}
           />
           <Image
             src={nextImage.src}
