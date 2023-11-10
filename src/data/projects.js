@@ -4,7 +4,7 @@ import ckTmrsImg from "@public/media/cooking-timers/cookingTimers.gif"
 import altSchImg from "@public/media/altschool/altschool_13.jpg"
 import dspImg from "@public/media/dispose/dispose_01.jpg"
 import hwlzImg from "@public/media/howlerz/howlerz_01.jpg"
-import oniaImg from "@public/media/onia/Onia_04.jpg"
+import oniaImg from "@public/media/onia/onia_04.jpg"
 import cbdImg from "@public/media/createbuilddestroy/createbuilddestroy_07_1.jpg"
 import miscImg from "@public/media/miscellaneous/misc1_1350.jpg"
 

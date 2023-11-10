@@ -2,6 +2,7 @@
 import { useSelectedLayoutSegment } from 'next/navigation'
 import { usePathname } from 'next/navigation'
 import getPageType from '@/utils/getPageType'
+import { useEffect } from 'react'
 import { projects } from '@/data/projects'
 import Link from 'next/link'
 import Gallery from "@/components/gallery/Gallery"
@@ -14,6 +15,20 @@ export default function Nav() {
   // used to determine active <Link>
   const pathname = usePathname().split('/').pop()
 
+  useEffect(() => {
+    // if you're on a project page
+    if (segment === 'project') {
+      const activeLink = document.querySelector('a.active')
+      const rect = activeLink.getBoundingClientRect()
+      const isBelowViewport = rect.top > window.innerHeight
+      // and the nav link is below the viewport
+      if (isBelowViewport) {
+        // scroll it into view
+        activeLink.scrollIntoView();
+      }
+    }
+  })
+
   return(
     <aside className={`${s.aside} ${s[pageType]}`}>
       <nav className={s.nav}>
@@ -23,7 +38,7 @@ export default function Nav() {
             key={id}
             href={`/project/${id}`}
             scroll={false}
-            className={`${s.item} ${id === pathname && s.active}`}
+            className={`${s.item} ${id === pathname && 'active'}`}
           >
             <h2>{name}</h2>
             <p>{description}</p>

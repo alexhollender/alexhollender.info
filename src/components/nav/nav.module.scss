@@ -50,6 +50,6 @@
 
 .item h2 { text-decoration: underline; }
 
-.item:hover, .item.active {
+.item:hover, .item:global(.active) {
   color: var(--gray-text);
 }

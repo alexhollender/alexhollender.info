@@ -7,7 +7,6 @@ export default function Miscellaneous() {
 
   return (
     <section>
-      <p>Miscellaneous</p>
       {media.map((item, index) =>
         <ImageWrapper 
           key={item.src}
