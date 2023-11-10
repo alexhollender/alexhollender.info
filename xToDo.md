@@ -20,8 +20,9 @@
 [x] Metadata
 [x] fix hover interaction on nav items
 [x] deep linking to projects where nav is below view
-[] fix situation where you can't scroll the homepage if you're hovering over the gallery
 [] DIP blog post
+[] connect domain
+[] fix situation where you can't scroll the homepage if you're hovering over the gallery
 [] Try blob media storage in Vercel
 
 
