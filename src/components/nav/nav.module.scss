@@ -33,32 +33,23 @@
   margin: 124px var(--margin-inner) var(--margin-bottom) 0;
 }
 
-.nav > * {
-  padding-left: 15px;
-  transform: translateX(-15px); // to offset padding-left
-}
-
 .intro {
   max-width: 490px;
   margin-bottom: 10px;
   font-family: serif;
   font-size: 19px;
   color: var(--gray-text);
-  border-left: 1px solid transparent;
 }
 
 .item { 
   max-width: 420px;
   text-decoration: none;
   color: var(--black);
-  transition: transform 300ms;
+  transition: color 300ms;
 }
 
 .item h2 { text-decoration: underline; }
 
 .item:hover, .item.active {
-  @media (min-width: 700px) {
-    transform: translateX(0);
-    border-left: 1px solid var(--black);
-  }
+  color: blue;
 }

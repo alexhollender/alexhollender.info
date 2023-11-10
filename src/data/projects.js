@@ -1,57 +1,62 @@
 export const projects = [
   {
-    path: 'abcd',
-    name: 'test',
-    description: 'tttttt'
-  },
-  {
-    path: 'wiki-2023',
+    id: 'wiki-2023',
     name: 'Wikipedia 2023 redesign',
-    description: 'Various improvements to the desktop interface of Wikipedia (lead designer)'
+    description: 'Various improvements to the desktop interface of Wikipedia (lead designer)',
+    component: 'Wiki2023'
   },
   {
-    path: 'wiki-kids',
+    id: 'wiki-kids',
     name: 'Wikipedia for younger learners',
-    description: 'Explorations of making Wikipedia more accessible for younger learners'
+    description: 'Explorations of making Wikipedia more accessible for younger learners',
+    component: 'WikiKids'
   },
   {
-    path: 'ingredient-substitutions',
+    id: 'ingredient-substitutions',
     name: 'Ingredient substitutions',
-    description: 'A basic ingreident substitution lookup tool'
+    description: 'A basic ingreident substitution lookup tool',
+    component: 'IngredientSubstitutions'
   },
   {
-    path: 'cooking-timers',
+    id: 'cooking-timers',
     name: 'Cooking timers',
-    description: 'A basic timer tool'
+    description: 'A basic timer tool',
+    component: 'CookingTimers'
   },
   {
-    path: 'altschool',
+    id: 'altschool',
     name: 'AltSchool',
-    description: 'An education technology startup in San Francisco (lead designer)'
+    description: 'An education technology startup in San Francisco (lead designer)',
+    component: 'AltSchool'
   },
   {
-    path: 'dispose',
+    id: 'dispose',
     name: 'DISPOSE',
-    description: 'An art project & online magazine involving disposable cameras (co-founder)'
+    description: 'An art project & online magazine involving disposable cameras (co-founder)',
+    component: 'Dispose'
   },
   {
-    path: 'howlerz',
+    id: 'howlerz',
     name: 'Howlerz',
-    description: 'A website I designed and built where people bought the Howlerz digital art collection'
+    description: 'A website I designed and built where people bought the Howlerz digital art collection',
+    component: 'Howlerz'
   },
   {
-    path: 'onia',
+    id: 'onia',
     name: 'Onia',
-    description: 'A clothing company in NYC (lead designer & my first job out of college)'
+    description: 'A clothing company in NYC (lead designer & my first job out of college)',
+    component: 'Onia'
   },
   {
-    path: 'create-build-destroy',
+    id: 'create-build-destroy',
     name: 'Create Build Destroy',
-    description: 'A clothing company I ran with a few friends in college'
+    description: 'A clothing company I ran with a few friends in college',
+    component: 'CreateBuildDestroy'
   },
   {
-    path: 'miscellaneous',
+    id: 'miscellaneous',
     name: 'Misc.',
-    description: 'Other bits and pieces'
+    description: 'Other bits and pieces',
+    component: 'Miscellaneous'
   }
 ]

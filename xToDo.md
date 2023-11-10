@@ -19,6 +19,7 @@
 [x] add previous image button on <Gallery>
 [] Metadata
 [] fix hover interaction on nav items
+[] fix situation where you can't scroll the homepage if you're hovering over the gallery
 [] DIP blog post
 [] Try blob media storage in Vercel
 

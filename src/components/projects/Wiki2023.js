@@ -5,31 +5,6 @@ import dipComp from '@public/media/wiki-2023/dip-computer.png'
 import underConstruction from '@public/media/wiki-2023/underconstruction.gif'
 import languages from '@public/media/wiki-2023/318languages.jpg'
 
-export function generateMetadata({ params }) {
-  const project = 'Wikipedia 2023 redesign'
-  const description = 'Test'
-  const image = [
-    {
-      url: comingSoon.src,
-      width: comingSoon.width,
-      height: comingSoon.height
-    },
-  ]
- 
-  return {
-    title: `${project} • Alex Hollender`,
-    description: description,
-    openGraph: {
-      title: `${project} • Alex Hollender`,
-      description: description,
-      images: image
-    },
-    twitter: {
-      images: image
-    },
-  }
-}
-
 export default function Wiki2023() {
   return(
     <section>
