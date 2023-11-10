@@ -51,5 +51,5 @@
 .item h2 { text-decoration: underline; }
 
 .item:hover, .item.active {
-  color: blue;
+  color: var(--gray-text);
 }

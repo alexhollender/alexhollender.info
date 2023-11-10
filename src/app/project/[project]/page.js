@@ -1,14 +1,13 @@
 import dynamic from 'next/dynamic';
 import { projects } from "@/data/projects"
-import comingSoon from '@public/media/wiki-2023/comingsoon.jpg'
 
 export function generateMetadata({ params }) {
   const project = projects.find(p => p.id === params.project)
   const image = [
     {
-      url: comingSoon.src,
-      width: comingSoon.width,
-      height: comingSoon.height
+      url: project?.image?.src,
+      width: project?.image?.width,
+      height: project?.image?.height
     },
   ]
  
@@ -18,10 +17,12 @@ export function generateMetadata({ params }) {
     openGraph: {
       title: `${project.name} • Alex Hollender`,
       description: project.description,
-      images: image
+      // only include image if it exists
+      ...(project.image && { images: image })
     },
     twitter: {
-      images: image
+      // only include image if it exists
+      ...(project.image && { images: image })
     },
   }
 }
