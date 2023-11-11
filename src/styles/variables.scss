@@ -1,10 +1,10 @@
 :root {
   --black: #000;
-  --white: 255, 255, 255;
+  --white: #fff;
   --gray-text: #808080;
   --gray-border: #ddd;
   --page-bg: var(--white);
-  --page-bg-trans: rgba(var(--white), 0.75);
+  --page-bg-trans: rgba(255,255,255,0.75);
   --video-shadow: 0 5px 15px 0 rgba(0,0,0,.1);
   --margin-outer: 100px;
   --margin-inner: 40px;

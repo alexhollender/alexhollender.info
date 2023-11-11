@@ -52,7 +52,7 @@ export default function Gallery() {
             src={currentImage.src}
             width={currentImage.width}
             height={currentImage.height}
-            alt={extractFileName(currentImage.src)}
+            alt='personal image'
             priority
           />
           <Image

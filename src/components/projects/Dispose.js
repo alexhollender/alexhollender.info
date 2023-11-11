@@ -1,8 +1,8 @@
 import { importAll, removeDuplicates } from "@/utils/mediaImports"
 import Image from "next/image"
 import ImageWrapper from "@/components/imageWrapper/ImageWrapper"
-const mediaArray = importAll(require.context('@public/media/dispose/images', true, /\.(png|jpe?g|gif|svg)$/))
-import camera from '@public/media/dispose/dispose_01.jpg'
+const mediaArray = importAll(require.context('@public/media/projects/dispose/images', true, /\.(png|jpe?g|gif|svg)$/))
+import camera from '@public/media/projects/dispose/dispose_01.jpg'
 
 export default function Dispose() {
   const media = removeDuplicates(mediaArray)

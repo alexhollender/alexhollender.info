@@ -18,6 +18,11 @@ h1, h2, h3, p, ul {
 a { color: var(--black); }
 a:visited { color: var(--black); }
 
+hr {
+  width: 100%;
+  border-top: 1px solid var(--gray-border)
+}
+
 ::selection {
   background: var(--black);
   color: var(--white);
@@ -34,6 +39,23 @@ a:visited { color: var(--black); }
   }
   to {
     opacity: 1;
+  }
+}
+
+aside, main {
+  &::-webkit-scrollbar {
+    width: auto;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--gray-border);
+    border-radius: 25px;
+    border: 4px solid transparent;
+    background-clip: content-box;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: var(--page-bg);
   }
 }
 

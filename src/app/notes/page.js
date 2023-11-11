@@ -1,5 +1,5 @@
-export default function Notes() {
-  return(
-    <div>List of notes here</div>
-  )
+import { redirect } from 'next/navigation'
+ 
+export default async function Page() {
+  redirect('/')
 }

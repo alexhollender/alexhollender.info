@@ -1,7 +1,7 @@
 import { importAll, removeDuplicates } from "@/utils/mediaImports"
 import Link from "next/link";
 import ImageWrapper from "@/components/imageWrapper/ImageWrapper";
-const mediaArray = importAll(require.context('@public/media/createbuilddestroy', true, /\.(png|jpe?g|gif|svg)$/));
+const mediaArray = importAll(require.context('@public/media/projects/createbuilddestroy', true, /\.(png|jpe?g|gif|svg)$/));
 
 export default function CreaetBuildDestroy() {
   const media = removeDuplicates(mediaArray)

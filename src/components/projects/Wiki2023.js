@@ -1,9 +1,9 @@
 import Link from "next/link"
 import Image from "next/image"
-import comingSoon from '@public/media/wiki-2023/comingsoon.jpg'
-import dipComp from '@public/media/wiki-2023/dip-computer.png'
-import underConstruction from '@public/media/wiki-2023/underconstruction.gif'
-import languages from '@public/media/wiki-2023/318languages.jpg'
+import comingSoon from '@public/media/projects/wiki-2023/comingsoon.jpg'
+import dipComp from '@public/media/projects/wiki-2023/dip-computer.png'
+import underConstruction from '@public/media/projects/wiki-2023/underconstruction.gif'
+import languages from '@public/media/projects/wiki-2023/318languages.jpg'
 
 export default function Wiki2023() {
   return(

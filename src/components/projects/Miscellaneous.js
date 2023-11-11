@@ -1,6 +1,6 @@
 import { importAll, removeDuplicates } from "@/utils/mediaImports"
 import ImageWrapper from "@/components/imageWrapper/ImageWrapper"
-const mediaArray = importAll(require.context('@public/media/miscellaneous', true, /\.(png|jpe?g|gif|svg)$/))
+const mediaArray = importAll(require.context('@public/media/projects/miscellaneous', true, /\.(png|jpe?g|gif|svg)$/))
 
 export default function Miscellaneous() {
   const media = removeDuplicates(mediaArray)

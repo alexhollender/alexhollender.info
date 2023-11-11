@@ -1,12 +1,12 @@
-import wiki23Img from '@public/media/wiki-2023/comingsoon.jpg'
-import ingSubsImg from "@public/media/ingredient-substitutions/ingredientSubstitutions.gif"
-import ckTmrsImg from "@public/media/cooking-timers/cookingTimers.gif"
-import altSchImg from "@public/media/altschool/altschool_13.jpg"
-import dspImg from "@public/media/dispose/dispose_01.jpg"
-import hwlzImg from "@public/media/howlerz/howlerz_01.jpg"
-import oniaImg from "@public/media/onia/onia_04.jpg"
-import cbdImg from "@public/media/createbuilddestroy/createbuilddestroy_07_1.jpg"
-import miscImg from "@public/media/miscellaneous/misc1_1350.jpg"
+import wiki23Img from '@public/media/projects/wiki-2023/comingsoon.jpg'
+import ingSubsImg from "@public/media/projects/ingredient-substitutions/ingredientSubstitutions.gif"
+import ckTmrsImg from "@public/media/projects/cooking-timers/cookingTimers.gif"
+import altSchImg from "@public/media/projects/altschool/altschool_13.jpg"
+import dspImg from "@public/media/projects/dispose/dispose_01.jpg"
+import hwlzImg from "@public/media/projects/howlerz/howlerz_01.jpg"
+import oniaImg from "@public/media/projects/onia/onia_04.jpg"
+import cbdImg from "@public/media/projects/createbuilddestroy/createbuilddestroy_07_1.jpg"
+import miscImg from "@public/media/projects/miscellaneous/misc1_1350.jpg"
 
 export const projects = [
   {
@@ -23,18 +23,11 @@ export const projects = [
     component: 'WikiKids'
   },
   {
-    id: 'ingredient-substitutions',
-    name: 'Ingredient substitutions',
-    description: 'A basic ingreident substitution lookup tool',
+    id: 'cooking-tools',
+    name: 'Cooking timers & Ingredient substitutions',
+    description: 'Basic cooking tools, mainly to practice web development',
     image: ingSubsImg,
-    component: 'IngredientSubstitutions'
-  },
-  {
-    id: 'cooking-timers',
-    name: 'Cooking timers',
-    description: 'A basic timer tool',
-    image: ckTmrsImg,
-    component: 'CookingTimers'
+    component: 'CookingTools'
   },
   {
     id: 'altschool',

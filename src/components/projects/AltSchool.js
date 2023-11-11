@@ -1,7 +1,7 @@
 import { importAll, removeDuplicates } from "@/utils/mediaImports"
 import Link from "next/link"
 import ImageWrapper from "@/components/imageWrapper/ImageWrapper";
-const mediaArray = importAll(require.context('@public/media/altschool', true, /\.(png|jpe?g|gif|svg)$/));
+const mediaArray = importAll(require.context('@public/media/projects/altschool', true, /\.(png|jpe?g|gif|svg)$/));
 
 export default function AltSchool() {
   const media = removeDuplicates(mediaArray)

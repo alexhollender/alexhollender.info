@@ -36,7 +36,7 @@ export default function Nav() {
         {projects.map(({ id, name, description }) =>
           <Link
             key={id}
-            href={`/project/${id}`}
+            href={`/projects/${id}`}
             scroll={false}
             className={`${s.item} ${id === pathname && 'active'}`}
           >
