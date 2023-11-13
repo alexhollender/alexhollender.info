@@ -25,6 +25,7 @@
 [x] DIP blog post
 [x] create redirect from old blog post URL to new one
 [x] connect domain
+[x] decrease file size of home images
 
 ===== Later on
 [] host media elsewhere (currently pulling from previous firebase site)
