@@ -33,19 +33,11 @@ export default function Gallery() {
     setCount((prevCount) => (prevCount + 1) % media.length);
   }
 
-  function imgPrev() {
-    setCount((prevCount) => (prevCount - 1 + media.length) % media.length);
-  }
-
   const currentImage = media[randomSeries[count]] || {};
   const nextImage = media[randomSeries[(count + 1) % media.length]] || {};
 
   return (
     <div className={`${s.gallery} gallery`}>
-      <div className={s.controls}>
-        <div className={s.previous} onClick={imgNext}></div>
-        <div className={s.next} onClick={imgPrev}></div>
-      </div>
       {randomSeries.length > 0 && (
         <>
           <Image
@@ -54,6 +46,7 @@ export default function Gallery() {
             height={currentImage.height}
             alt='personal image'
             priority
+            onClick={imgNext}
           />
           <Image
             src={nextImage.src}
