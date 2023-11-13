@@ -24,17 +24,10 @@
 [x] custom scrollbar
 [x] DIP blog post
 [x] create redirect from old blog post URL to new one
-[] connect domain
+[x] connect domain
+
+===== Later on
+[] host media elsewhere (currently pulling from previous firebase site)
+[] remove `wikipedia-2023-redesign` route redirect
 [] fix situation where you can't scroll the homepage if you're hovering over the gallery
 [] Try blob media storage in Vercel
-
-
-states to check:
-- home, mobile
-- home, desktop
-- project, mobile
-- project, desktop
-- about, mobile
-- about, desktop
-- notes, mobile
-- notes, desktop
