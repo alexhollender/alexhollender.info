@@ -14,6 +14,16 @@ import surfing from '@public/media/notes/wiki2023Redesign/surfing.jpg'
 import paris from '@public/media/notes/wiki2023Redesign/paris.jpg'
 import community from '@public/media/notes/wiki2023Redesign/community.jpg'
 
+export const metadata = {
+  title: "Design notes on the 2023 Wikipedia redesign • Alex Hollender",
+  description: "Design notes on the 2023 Wikipedia redesign",
+  openGraph: {
+    title: "Design notes on the 2023 Wikipedia redesign • Alex Hollender",
+    description: "Design notes on the 2023 Wikipedia redesign",
+    url: "https://alexhollender.info/notes/wikipedia-2023-redesign",
+  },
+}
+
 export default function Wikipedia2023RedesignNotes() {
   return(
     <>

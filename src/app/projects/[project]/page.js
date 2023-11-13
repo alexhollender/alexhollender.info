@@ -17,6 +17,7 @@ export function generateMetadata({ params }) {
     openGraph: {
       title: `${project.name} • Alex Hollender`,
       description: project.description,
+      url: `https://alexhollender.info/projects/${params.project}`,
       // only include image if it exists
       ...(project.image && { images: image })
     },
