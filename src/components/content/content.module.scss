@@ -10,25 +10,36 @@
   }
 }
 
-.content.project section {
+.content.project > section {
   margin-left: var(--margin-inner);
   margin-right: var(--margin-inner);
 }
 
 // ABOUT & NOTES
-.content.noNav { 
+.content.about,
+.content.notes { 
   width: 100%;
 }
 
-.content.noNav section {
-  margin-left: var(--margin-outer);
-  margin-right: var(--margin-outer);
+.content.about,
+.content.notes {
+  > section {
+    margin-left: var(--margin-outer);
+    margin-right: var(--margin-outer);
+  } 
+}
+
+.content.notes > section {
+  gap: 50px;
+  max-width: 850px;
+  margin-top: 100px;
 }
 
 // HOMEPAGE
 .content.home { display: none; }
 
-.content section {
+// SHARED STYLES
+.content > section {
   display: flex;
   flex-direction: column;
   gap: 20px;

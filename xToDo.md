@@ -20,9 +20,10 @@
 [x] Metadata
 [x] fix hover interaction on nav items
 [x] deep linking to projects where nav is below view
-[] DIP blog post
 [x] Combine cooking timers and ingredient substitutions
 [x] custom scrollbar
+[x] DIP blog post
+[] create redirect from old blog post URL to new one
 [] connect domain
 [] fix situation where you can't scroll the homepage if you're hovering over the gallery
 [] Try blob media storage in Vercel

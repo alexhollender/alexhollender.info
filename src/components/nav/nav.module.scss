@@ -24,7 +24,10 @@
  }
 
 // ABOUT & NOTES
-.aside.noNav { display: none; }
+.aside.about, 
+.aside.notes { 
+  display: none; 
+}
 
 .nav {
   display: flex;

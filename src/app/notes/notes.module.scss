@@ -1,0 +1,79 @@
+.notes h1, .notes h2, .notes h3 {
+  font-family: serif;
+  font-weight: 400;
+}
+
+.notes h1 {
+  font-size: 38px;
+  line-height: 125%;
+  margin-bottom: 20px;
+}
+
+.notes h2 {
+  font-size: 32px;
+  line-height: 1.8;
+}
+
+.notes h3 {
+  font-size: 24px;
+  line-height: 1.8;
+  margin: 20px 0 6px;
+}
+
+.notes p, 
+.notes ul,
+.notes a {
+  line-height: 150%;
+}
+
+.notes p + p {
+  margin-top: 25px;
+}
+
+.notes ul {
+  margin: revert;
+}
+
+.notes a {
+  color: blue;
+}
+
+.notes :global(.credits) {
+  color: var(--gray-text);
+}
+
+.notes img,
+.notes video {
+  margin: 30px 0;
+}
+
+// Table of prototypes
+.notes details,
+.notes summary {
+  margin: 20px 0;
+}
+
+.notes summary {
+  cursor: pointer;
+}
+
+.notes :global(.gridContainer) {
+  max-width: 600px;
+  display: grid;
+  grid-template-columns: 1fr 50px 1fr;
+  gap: 0; 
+  border: 1px solid black;
+  border-bottom: none;
+  font-size: 15px;
+}
+
+.notes :global(.gridItem) {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 4px 8px;
+  margin: 0;
+}
+
+.notes :global(.gridItem:nth-child(3n)) {
+  border-right: none;
+}
