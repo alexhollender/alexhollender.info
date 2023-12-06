@@ -141,8 +141,8 @@ export default function Wikipedia2023RedesignNotes() {
       <p>When the project started I built a <Link href="https://vector-2022.web.app/Moss" target="_blank" rel="noreferrer">base prototype</Link> (<Link href="https://github.com/alexhollender/wikipedia-prototype" target="_blank" rel="noreferrer">code</Link>), which was the Wikipedia interface hooked up to a few APIs so I could load any article (with its table of contents), in any language, as well as use the search box and get live search suggestions. I then added the ability to switch the interface itself (all of the buttons, links, etc.) to various languages. For each feature/design decision I would build a new prototype on top of that base, exploring the question(s) at hand. The prototypes often included a little settings panel in the bottom corner that allowed you to toggle between the various options being explored. Here is a relatively simple one that explores various ways of indicating the active section in the table of contents (<Link href="https://di-visual-design-toc-active.web.app/Okapi" target="_blank" rel="noreferrer">link</Link>):</p> 
       
       <video controls width="100%" autoPlay muted loop playsInline>
-        <source src="https://alexhollender.info/static/media/prototype.97055c4bd118bcb0a72b.webm" type="video/webm" />
-        <source src="https://alexhollender.info/static/media/prototype.99e6b1b108e904d62ef9.mp4" type="video/mp4" />
+        <source src="https://alexhollender-97463.web.app/static/media/prototype.97055c4bd118bcb0a72b.webm" type="video/webm" />
+        <source src="https://alexhollender-97463.web.app/static/media/prototype.99e6b1b108e904d62ef9.mp4" type="video/mp4" />
         Sorry, your browser doesn't support embedded videos.
       </video>
 
