@@ -10,6 +10,8 @@ import { vcrOsdMono } from '@/utils/fonts'
 export const metadata = {
   title: "You win some, you loose some",
   description: "Web design & development stuff",
+  // not sure if I need this? there was a console error in development mode
+  metadataBase: new URL('https://alexhollender.info'),
   openGraph: {
     title: "You win some, you loose some",
     description: "Web design & development stuff",

@@ -1,6 +1,5 @@
 import wiki23Img from '@public/media/projects/wiki-2023/comingsoon.jpg'
 import ingSubsImg from "@public/media/projects/ingredient-substitutions/ingredientSubstitutions.gif"
-import ckTmrsImg from "@public/media/projects/cooking-timers/cookingTimers.gif"
 import altSchImg from "@public/media/projects/altschool/altschool_13.jpg"
 import dspImg from "@public/media/projects/dispose/dispose_01.jpg"
 import hwlzImg from "@public/media/projects/howlerz/howlerz_01.jpg"

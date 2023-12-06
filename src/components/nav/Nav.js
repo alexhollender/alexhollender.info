@@ -37,7 +37,6 @@ export default function Nav() {
           <Link
             key={id}
             href={`/projects/${id}`}
-            scroll={false}
             className={`${s.item} ${id === pathname && 'active'}`}
           >
             <h2>{name}</h2>
