@@ -40,6 +40,21 @@ hr {
   color: var(--white);
 }
 
+img, video, .embed {
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+img:first-child, video:first-child {
+  margin-top: 0;
+}
+
+.shadow, video {
+  border-radius: 6px;
+  box-shadow: var(--video-shadow);
+}
+
 .wrapper { 
   // animation: fadeIn 800ms ease-in-out 800ms forwards;
   padding: 0 var(--margin-side) var(--margin-bottom) var(--margin-side);

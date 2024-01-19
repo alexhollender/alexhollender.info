@@ -1,5 +1,9 @@
+.notes {
+  max-width: 1000px;
+}
+
 .notes h1, .notes h2, .notes h3 {
-  font-family: serif;
+  font-family: var(--font-tobias);
   font-weight: 400;
 }
 

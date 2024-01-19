@@ -35,20 +35,3 @@
 .project p:global(.noMargin) {
   margin-bottom: 0;
 }
-
-.project {
-  img, video, :global(.embed) {
-    width: 100%;
-    height: auto;
-    margin: 20px 0;
-  }
-
-  img:first-child, video:first-child {
-    margin-top: 0;
-  }
-
-  :global(.shadow), video {
-    border-radius: 6px;
-    box-shadow: var(--video-shadow);
-  }
-}

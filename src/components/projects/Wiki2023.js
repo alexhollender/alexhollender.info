@@ -12,7 +12,7 @@ export default function Wiki2023() {
       <p className="projectInfo">
         <span>Role: Staff UX Designer & Design project lead</span>
         <span>Organization: Wikipedia / Wikimedia Foundation</span>
-        <span>Date: Spring 2020–January 2022</span>
+        <span>Date: April 2020–January 2022</span>
       </p>
 
       <p>As a staff product designer at the <Link href="https://wikimediafoundation.org" target="_blank" rel="external">Wikimedia Foundation</Link>, I led the 2023 redesign of the Wikipedia desktop interface. Our team began the project in April, 2020, and launched in January, 2023.</p>
