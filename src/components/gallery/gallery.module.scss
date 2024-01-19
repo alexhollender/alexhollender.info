@@ -1,22 +1,7 @@
 .gallery { 
-  position: fixed;
-  right: 15px;
-  top: 48px;
-  width: 40%;
   max-width: 500px;
-
-  @media (max-width: 1000px) {
-    position: fixed;
-    bottom: 0;
-    top: unset;
-  }
-
-  // hide on mobile
-  @media (max-width: 600px) {
-    position: initial;
-    width: auto;
-    margin: 0 var(--margin-outer) var(--margin-bottom) 0;
-  }
+  padding-bottom: 60px;
+  padding-top: 30px;
 }
 
 .gallery img { 

@@ -7,14 +7,27 @@ import languages from '@public/media/projects/wiki-2023/318languages.jpg'
 
 export default function Wiki2023() {
   return(
+    <>
     <section>
-      <p>As a staff member of the <Link href="https://wikimediafoundation.org" target="_blank" rel="noreferrer">Wikimedia Foundation</Link>, I led the 2023 redesign of the Wikipedia desktop interface. Our team began the project in April, 2020, and launched in January, 2023.</p>
-      <ul>
-        <li><Link href="/notes/wikipedia-2023-redesign">My notes on the project & process</Link></li>
-        <li><Link href="https://www.smashingmagazine.com/2023/06/behind-curtains-wikipedia-redesign/" target="_blank" rel="noreferrer">Smashing Magazine interview</Link></li>
-        <li><Link href="https://slate.com/technology/2023/01/wikipedia-redesign-vector-2022-skin.html" target="_blank" rel="noreferrer">Slate article</Link></li>
-        <li><Link href="https://techcrunch.com/2023/01/18/wikipedia-gets-its-first-makeover-in-over-a-decade-and-its-fairly-subtle/" target="_blank" rel="noreferrer">Tech Crunch article</Link></li>
-      </ul>
+      <p className="projectInfo">
+        <span>Role: Staff UX Designer & Design project lead</span>
+        <span>Organization: Wikipedia / Wikimedia Foundation</span>
+        <span>Date: Spring 2020–January 2022</span>
+      </p>
+
+      <p>As a staff product designer at the <Link href="https://wikimediafoundation.org" target="_blank" rel="external">Wikimedia Foundation</Link>, I led the 2023 redesign of the Wikipedia desktop interface. Our team began the project in April, 2020, and launched in January, 2023.</p>
+
+      <p><Link href="/notes/wikipedia-2023-redesign"><strong>Case study</strong></Link></p>
+      
+      <p>
+        Other links:<br />
+        <Link href="https://www.smashingmagazine.com/2023/06/behind-curtains-wikipedia-redesign/" target="_blank" rel="external">Smashing Magazine interview</Link><br />
+        <Link href="https://slate.com/technology/2023/01/wikipedia-redesign-vector-2022-skin.html" target="_blank" rel="external">Slate article</Link><br />
+        <Link href="https://techcrunch.com/2023/01/18/wikipedia-gets-its-first-makeover-in-over-a-decade-and-its-fairly-subtle/" target="_blank" rel="external">Tech Crunch article</Link>
+      </p>
+    </section>
+
+    <section>
       <Image 
         src={comingSoon}
         alt="Poster for the release of Vector 2022"
@@ -45,5 +58,6 @@ export default function Wiki2023() {
         <source src="https://alexhollender-97463.firebaseapp.com/static/media/content-separation.9614dcfb23c3ae351e23.mp4" type="video/mp4" />
       </video>
     </section>
+    </>
   )
 }

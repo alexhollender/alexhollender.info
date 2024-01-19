@@ -1,5 +1,7 @@
 import dynamic from 'next/dynamic';
-import { projects } from "@/data/projects"
+import { projects } from "@/data/projects";
+import s from './page.module.scss';
+import Nav from '@/components/nav/Nav';
 
 export function generateMetadata({ params }) {
   const project = projects.find(p => p.id === params.project)
@@ -32,5 +34,12 @@ export default function Project({ params }) {
   const project = projects.find(p => p.id === params.project)
   const ProjectComponent = dynamic(() => import(`@/components/projects/${project.component}`));
 
-  return <ProjectComponent />
+  return (
+    <>
+    <div className={s.project}>
+      <ProjectComponent />
+    </div>
+    <Nav />
+    </>
+  )
 }

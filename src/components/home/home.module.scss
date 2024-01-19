@@ -1,0 +1,23 @@
+.intro {
+  max-width: 1000px;
+  font-family: var(--font-tobias);
+  font-size: 20px;
+  line-height: 165%;
+
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
+
+  p { margin-bottom: 20px; }
+  
+  .contact {
+    margin-top: 60px;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: var(--gray-text);
+
+    a { color: var(--gray-text); }
+  }
+
+
+}

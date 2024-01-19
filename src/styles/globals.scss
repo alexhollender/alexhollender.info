@@ -7,6 +7,7 @@ body {
   margin: 0;
   -moz-osx-font-smoothing: grayscale;
   font-family: sans-serif;
+  font-size: 18px;
   line-height: 150%;
 }
 
@@ -15,12 +16,21 @@ h1, h2, h3, p, ul {
   font-size: unset;
 }
 
-a { color: var(--black); }
+a { 
+  color: var(--black);
+  transition: color 300ms; 
+}
+
+a:hover {
+  color: var(--gray-text);
+}
+
 a:visited { color: var(--black); }
 
 hr {
   width: 100%;
-  border-top: 1px solid var(--gray-border)
+  border-top: 1px solid var(--gray-border);
+  margin: 30px 0;
 }
 
 ::selection {
@@ -28,9 +38,19 @@ hr {
   color: var(--white);
 }
 
-.wrapper { 
-  display: flex;
-  animation: fadeIn 800ms ease-in-out 800ms forwards; 
+main { 
+  animation: fadeIn 800ms ease-in-out 800ms forwards;
+  padding: 0 var(--margin-side) var(--margin-bottom) var(--margin-side);
+  padding-top: var(--margin-top);
+}
+
+main div:first-of-type {
+  margin-top: var(--margin-top-page);
+}
+
+.tagline {
+  font-size: 14px;
+  font-family: var(--font-vcr);
 }
 
 @keyframes fadeIn {

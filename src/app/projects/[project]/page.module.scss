@@ -1,0 +1,36 @@
+.project {
+  @media (min-width: 1300px) {
+    display: grid;
+    grid-template-columns: minmax(0, 40%) minmax(0, 60%);
+    gap: 80px;
+
+    section:first-child {
+      position: sticky;
+      top: 40px;
+      height: fit-content;
+    }
+  }
+}
+
+.project :global(.projectInfo) {
+  font-size: 14px;
+
+  span { display: block; }
+}
+
+.project p {
+  margin-bottom: 20px;
+}
+
+.project {
+  img, video {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  img:global(.shadow), video {
+    border-radius: 6px;
+    box-shadow: var(--video-shadow);
+  }
+}

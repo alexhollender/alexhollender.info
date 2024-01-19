@@ -2,18 +2,15 @@ import '../styles/globals.scss'
 import '../styles/variables.scss'
 import '../styles/dark.scss'
 import Header from '@/components/header/Header'
-import Nav from '@/components/nav/Nav'
-import Content from '@/components/content/Content'
 import DarkModeToggle from '@/components/darkModeToggle/DarkModeToggle'
-import { vcrOsdMono } from '@/utils/fonts'
+import { vcrOsdMono, generalSans, tobias } from '@/utils/fonts'
 
 export const metadata = {
-  title: "You win some, you loose some",
-  description: "Web design & development stuff",
-  // not sure if I need this? there was a console error in development mode
+  title: "Alex Hollender — Product Design",
+  description: "Alex Hollender's design portfolio",
   metadataBase: new URL('https://alexhollender.info'),
   openGraph: {
-    title: "You win some, you loose some",
+    title: "Alex Hollender — Product Design",
     description: "Web design & development stuff",
     author: "Alex Hollender",
     url: "https://alexhollender.info",
@@ -25,14 +22,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={vcrOsdMono.variable}>
+    <html lang="en" className={`${generalSans.variable} ${tobias.variable} ${vcrOsdMono.variable}`}>
       <body>
-        <Header />
-        <div className='wrapper'>
-          <Nav />
-          <Content>{children}</Content>
-        </div>
-        <DarkModeToggle />
+        <main>
+          <Header />
+          {children}
+          <DarkModeToggle />
+        </main>
       </body>
     </html>
   )

@@ -6,25 +6,21 @@
   --page-bg: var(--white);
   --page-bg-trans: rgba(255,255,255,0.75);
   --video-shadow: 0 5px 15px 0 rgba(0,0,0,.1);
-  --margin-outer: 100px;
-  --margin-inner: 40px;
+  --margin-side: 100px;
   --margin-top: 40px;
+  --margin-top-page: 80px;
   --margin-bottom: 50px;
+  --grid-gap: 60px;
 
   @media (max-width: 1440px) {
-    --margin-outer: 80px;
+    --margin-side: 80px;
   }
 
   @media (max-width: 1300px) {
-    --margin-outer: 40px;
+    --margin-side: 40px;
   }
 
   @media (max-width: 1000px) {
-    --margin-inner: 20px;
-    --margin-top: 60px;
-  }
-
-  @media (max-width: 700px) {
-    --margin-outer: 20px;
+    --margin-side: 20px;
   }
 }

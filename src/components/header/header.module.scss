@@ -1,11 +1,7 @@
 .header {
-  width: 100vw;
-  position: fixed;
-  z-index: 2;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  padding: 10px 20px;
+  align-items: center;
   font-size: 14px;
   font-family: var(--font-vcr);
   line-height: initial;
@@ -15,35 +11,18 @@
   }
 }
 
-.left, .center, .right {
-  background-color: var(--page-bg-trans);
-  backdrop-filter: blur(10px);
-  border-radius: 2px;
-  padding: 2px;
-}
-
-.center { text-align: center; }
-
 .header a {
-  color: var(--black);
   text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
 }
 
 // hide `Back` label by default
 .left span { display: none; }
 
 .header.project {
-  @media (max-width: 1000px) {
-    // show `Back` label below 1000px on project pages
-    .left h1 { display: none; }
-    .left span { display: initial; }
-    // hide `About`
-    .right { display: none; }
-  }
+  .left h1 { display: none; }
+  .left span { display: initial; }
+  // hide `About`
+  .right { display: none; }
 }
 
 // hide `win some, loose some` text on project pages

@@ -1,47 +1,19 @@
-.aside {
-  height: 100vh;
-  overflow-y: scroll;
-  margin-left: var(--margin-outer);
-}
-
-// PROJECT
-.aside.project { 
-  width: 42%;
-  border-right: 1px solid var(--gray-border);
-  
-  @media (max-width: 1000px) {
-    display: none;
-  }
-}
-
-.aside.project :global(.gallery) {
-  display: none;
-}
-
-// HOME
-.aside.home { 
-  width: 100%;
- }
-
-// ABOUT & NOTES
-.aside.about, 
-.aside.notes { 
-  display: none; 
-}
-
 .nav {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  margin: 124px var(--margin-inner) var(--margin-bottom) 0;
-}
+  display: grid;
+  gap: var(--grid-gap);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding-bottom: 100px;
+  margin-top: var(--margin-top-page);
+  padding-top: var(--margin-top-page);
+  border-top: 1px solid black;
 
-.intro {
-  max-width: 490px;
-  margin-bottom: 10px;
-  font-family: serif;
-  font-size: 19px;
-  color: var(--gray-text);
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (max-width: 700px) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
 }
 
 .item { 
@@ -52,7 +24,3 @@
 }
 
 .item h2 { text-decoration: underline; }
-
-.item:hover, .item:global(.active) {
-  color: var(--gray-text);
-}
