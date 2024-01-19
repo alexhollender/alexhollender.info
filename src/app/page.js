@@ -8,7 +8,7 @@ export default function Page() {
       <Home />
       <Nav />
       <Gallery />
-      <p className="tagline">©2024 • you win some, you loose some</p>
+      <p className="tagline">© 2024 • you win some, you loose some</p>
     </main>
   )
 }
