@@ -12,7 +12,6 @@ export default function Header() {
     <header className={`${s.header} ${s[pageType]}`}>
       <Link href="/" className={s.left}>
         <h1>Alex Hollender — Product Design</h1>
-        <span>← Home</span>
       </Link>
     </header>
   )

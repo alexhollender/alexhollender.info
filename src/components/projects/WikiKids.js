@@ -19,14 +19,14 @@ export default function WikiKids() {
       <VideoEmbed url="https://www.youtube.com/watch?v=WvWXke-SeOQ" />
       <div className={s.flex}>
         <div>
-          <p><Link href="https://mobile-wikipedia.web.app/Hokusai" target="_blank" rel="external">first prototype</Link> <span>(intended for mobile)</span></p>
+          <p className="noMargin"><Link href="https://mobile-wikipedia.web.app/Hokusai" target="_blank" rel="external">Prototype A</Link></p>
           <video controls loop playsInline muted>
             <source src="https://alexhollender-97463.firebaseapp.com/static/media/mediaslider.73d46202499e5e0d38c1.webm" type="video/webm" />
             <source src="https://alexhollender-97463.firebaseapp.com/static/media/mediaslider.d16329cd661d264e7e94.mp4" type="video/mp4" />
           </video>
         </div>
         <div>
-          <p><Link href="https://mobile-stories-96b31.web.app/Machu_Picchu" target="_blank" rel="external">second prototype</Link> <span>(intended for mobile)</span></p>
+          <p className="noMargin"><Link href="https://mobile-stories-96b31.web.app/Machu_Picchu" target="_blank" rel="external">Prototype B</Link></p>
           <video controls loop playsInline muted>
             <source src="https://alexhollender-97463.firebaseapp.com/static/media/mediastory.363521841398c8e27c9a.webm" type="video/webm" />
             <source src="https://alexhollender-97463.firebaseapp.com/static/media/mediastory.eec9ce1396b0d15832ec.mp4" type="video/mp4" />

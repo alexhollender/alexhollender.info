@@ -5,25 +5,8 @@
   font-size: 14px;
   font-family: var(--font-vcr);
   line-height: initial;
-
-  @media (max-width: 1000px) {
-    p { display: none; }
-  }
 }
 
 .header a {
   text-decoration: none;
 }
-
-// hide `Back` label by default
-.left span { display: none; }
-
-.header.project {
-  .left h1 { display: none; }
-  .left span { display: initial; }
-  // hide `About`
-  .right { display: none; }
-}
-
-// hide `win some, loose some` text on project pages
-.header.project p { display: none; }

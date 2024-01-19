@@ -35,11 +35,11 @@ export default function Project({ params }) {
   const ProjectComponent = dynamic(() => import(`@/components/projects/${project.component}`));
 
   return (
-    <>
-    <div className={s.project}>
-      <ProjectComponent />
-    </div>
-    <Nav />
-    </>
+    <main>
+      <div className={s.project}>
+        <ProjectComponent />
+      </div>
+      <Nav />
+    </main>
   )
 }

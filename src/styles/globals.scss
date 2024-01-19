@@ -6,14 +6,16 @@
 body {
   margin: 0;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   font-family: sans-serif;
   font-size: 18px;
-  line-height: 150%;
+  line-height: 160%;
 }
 
 h1, h2, h3, p, ul {
   margin: 0;
   font-size: unset;
+  font-weight: unset;
 }
 
 a { 
@@ -38,13 +40,13 @@ hr {
   color: var(--white);
 }
 
-main { 
+.wrapper { 
   animation: fadeIn 800ms ease-in-out 800ms forwards;
   padding: 0 var(--margin-side) var(--margin-bottom) var(--margin-side);
   padding-top: var(--margin-top);
 }
 
-main div:first-of-type {
+main {
   margin-top: var(--margin-top-page);
 }
 

@@ -24,11 +24,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${generalSans.variable} ${tobias.variable} ${vcrOsdMono.variable}`}>
       <body>
-        <main>
+        <div className='wrapper'>
           <Header />
           {children}
           <DarkModeToggle />
-        </main>
+        </div>
       </body>
     </html>
   )
