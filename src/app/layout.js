@@ -27,8 +27,8 @@ export default function RootLayout({ children }) {
         <div className='wrapper'>
           <Header />
           {children}
-          <DarkModeToggle />
         </div>
+        <DarkModeToggle />
       </body>
     </html>
   )

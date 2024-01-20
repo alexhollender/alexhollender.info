@@ -18,12 +18,12 @@ h1, h2, h3, p, ul {
   font-weight: unset;
 }
 
-a { 
+a, label { 
   color: var(--black);
   transition: color 300ms; 
 }
 
-a:hover {
+a:hover, label:hover {
   color: var(--gray-text);
 }
 
