@@ -18,6 +18,16 @@ export default function Wiki2023() {
       <p>As a staff product designer at the <Link href="https://wikimediafoundation.org" target="_blank" rel="external">Wikimedia Foundation</Link>, I led the 2023 redesign of the Wikipedia desktop interface. Our team began the project in April, 2020, and launched in January, 2023.</p>
 
       <p><Link href="/notes/wikipedia-2023-redesign"><strong>Case study</strong></Link></p>
+
+      <div>
+        Business results/data:
+        <ul>
+          <li>45% increased use of Table of Contents</li>
+          <li>29% increased use of Search</li>
+          <li>Prefered by 87% of logged-in users</li>
+          <li>15% decrease in "navigational scrolling" to find tools, menu items, etc.</li>
+        </ul>
+      </div>
       
       <p>
         Other links:<br />
