@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
           <Header />
           {children}
         </div>
-        <DarkModeToggle />
+        {/* <DarkModeToggle /> */}
       </body>
     </html>
   )
