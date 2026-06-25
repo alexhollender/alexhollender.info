@@ -37,14 +37,14 @@ export default function CookingTimers() {
   return (
     <>
       <div
-        className={`border-b border-[#cacaca] max-[900px]:px-[30px] max-[900px]:pb-0 ${
-          compact ? 'max-[900px]:pt-[20px]' : 'max-[900px]:pt-[30px]'
+        className={`border-b border-neutral-300 tablet:px-8 tablet:pb-0 ${
+          compact ? 'tablet:pt-5' : 'tablet:pt-8'
         }`}
       >
         <Header compact={compact} />
         <NewTimer addTimer={addTimer} running={running} compact={compact} />
       </div>
-      <div className="flex grow flex-wrap max-[900px]:flex-col max-[900px]:flex-nowrap [&>div:nth-child(3n)]:grow">
+      <div className="flex grow flex-wrap tablet:flex-col tablet:flex-nowrap [&>div:nth-child(3n)]:grow">
         {timers.map((t) => (
           <Timer
             key={t.id}

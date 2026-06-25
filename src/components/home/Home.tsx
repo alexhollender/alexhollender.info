@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="max-w-[1000px] font-tobias text-xl leading-[165%] max-[1000px]:w-full [&_div]:mb-[20px]">
+    <div className="max-w-5xl font-tobias text-xl leading-relaxed content:w-full [&_div]:mb-5">
       <div>
         Hey, I’m Alex. I’ve been a product designer for the past 10 years. Most
         recently I led the{" "}
@@ -75,7 +75,7 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="mt-[50px] font-xanh-mono text-lg">
+      <div className="mt-12 font-xanh-mono text-lg">
         alexhollender@gmail.com —{" "}
         <Link
           href="https://www.linkedin.com/in/alex-hollender/"

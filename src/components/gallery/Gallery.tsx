@@ -37,7 +37,7 @@ export default function Gallery() {
   const nextImage = media[randomSeries[(count + 1) % media.length]] ?? ({} as StaticImageData);
 
   return (
-    <div className="max-w-[500px] pb-[60px] pt-[30px]">
+    <div className="max-w-lg pb-16 pt-8">
       {randomSeries.length > 0 && (
         <>
           <Image

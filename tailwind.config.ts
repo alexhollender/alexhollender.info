@@ -25,6 +25,12 @@ const config: Config = {
       },
       screens: {
         'two-col': '1300px',
+        content: { max: '1000px' },
+        tablet: { max: '900px' },
+        narrow: { max: '800px' },
+        wide: { max: '1200px' },
+        compact: { max: '700px' },
+        phone: { max: '550px' },
       },
     },
   },

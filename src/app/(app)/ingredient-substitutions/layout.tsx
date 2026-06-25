@@ -16,7 +16,7 @@ export default function IngredientSubstitutionsLayout({
   return (
     <>
       <Header />
-      <main className="mx-auto mt-0 max-w-[600px] px-[20px] pb-[75px] pt-[100px] max-[800px]:pt-[16px]">
+      <main className="mx-auto mt-0 max-w-xl px-5 pb-20 pt-24 narrow:pt-4">
         <AutoComplete />
         {children}
       </main>

@@ -1,72 +1,76 @@
-'use client'
-import { useState, useEffect } from 'react'
-import type { ChangeEvent, FormEvent } from 'react'
-import type { TimerData } from './types'
+"use client";
+import { useState, useEffect } from "react";
+import type { ChangeEvent, FormEvent } from "react";
+import type { TimerData } from "./types";
 
 interface Fields {
-  name: string
-  hours: string
-  minutes: string
-  seconds: string
+  name: string;
+  hours: string;
+  minutes: string;
+  seconds: string;
 }
 
-const EMPTY: Fields = { name: '', hours: '', minutes: '', seconds: '' }
+const EMPTY: Fields = { name: "", hours: "", minutes: "", seconds: "" };
 
 interface NewTimerProps {
-  addTimer: (timer: TimerData) => void
-  running: boolean
-  compact: boolean
+  addTimer: (timer: TimerData) => void;
+  running: boolean;
+  compact: boolean;
 }
 
-const inputGroup = 'flex flex-col'
-const labelClass = 'mb-[8px] font-sans'
-const colonClass = 'mx-[6px] mb-[12px] text-[28px]'
+const inputGroup = "flex flex-col";
+const labelClass = "mb-2 font-sans";
+const colonClass = "mx-1.5 mb-3 text-3xl";
 const numberInput =
-  "h-[50px] w-[52px] border border-transparent bg-[#f5f5f5] p-0 pl-[18px] font-sans text-[28px] placeholder:text-[#BCBCBC] focus:border-black focus:outline-none"
+  "h-12 w-16 border border-transparent bg-neutral-100 p-0 pl-4 font-sans text-3xl placeholder:text-neutral-400 focus:border-black focus:outline-none";
 
-export default function NewTimer({ addTimer, running, compact }: NewTimerProps) {
-  const [fields, setFields] = useState<Fields>(EMPTY)
-  const [show, setShow] = useState(true)
+export default function NewTimer({
+  addTimer,
+  running,
+  compact,
+}: NewTimerProps) {
+  const [fields, setFields] = useState<Fields>(EMPTY);
+  const [show, setShow] = useState(true);
 
   // when all timers stop, show the form again
   useEffect(() => {
-    if (!running) setShow(true)
-  }, [running])
+    if (!running) setShow(true);
+  }, [running]);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-    setFields((prev) => ({ ...prev, [e.target.name]: e.target.value }))
-  }
+    setFields((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
+    e.preventDefault();
     const total =
       Number(fields.hours) * 3600 +
       Number(fields.minutes) * 60 +
-      Number(fields.seconds)
-    if (!total) return
+      Number(fields.seconds);
+    if (!total) return;
     addTimer({
       id: crypto.randomUUID(),
       name: fields.name,
       duration: total,
       isOn: true,
-    })
-    setFields(EMPTY)
-    setShow(false)
-  }
+    });
+    setFields(EMPTY);
+    setShow(false);
+  };
 
-  const hasTime = fields.hours || fields.minutes || fields.seconds
+  const hasTime = fields.hours || fields.minutes || fields.seconds;
 
   return (
     <div>
       <form
         onSubmit={handleSubmit}
-        className={`mx-auto flex w-fit items-end transition-all duration-300 max-[900px]:m-0 max-[900px]:w-full max-[900px]:flex-col max-[900px]:items-start ${
+        className={`mx-auto flex w-fit items-end transition-all duration-300 tablet:m-0 tablet:w-full tablet:flex-col tablet:items-start ${
           compact
-            ? 'pb-[50px] pt-[40px] max-[900px]:pb-[30px] max-[900px]:pt-[20px]'
-            : 'pb-[120px] pt-[120px] max-[900px]:pb-[40px] max-[900px]:pt-[40px]'
-        } ${show ? '' : 'max-[900px]:hidden'}`}
+            ? "pb-12 pt-10 tablet:pb-8 tablet:pt-5"
+            : "pb-32 pt-32 tablet:pb-10 tablet:pt-10"
+        } ${show ? "" : "tablet:hidden"}`}
       >
-        <div className={`${inputGroup} max-[900px]:mb-[20px]`}>
+        <div className={`${inputGroup} tablet:mb-5`}>
           <label htmlFor="timerName" className={labelClass}>
             Timer name
           </label>
@@ -77,7 +81,7 @@ export default function NewTimer({ addTimer, running, compact }: NewTimerProps) 
             placeholder="Untitled timer"
             onChange={handleChange}
             value={fields.name}
-            className="h-[50px] w-[280px] border border-transparent bg-[#f5f5f5] p-0 pl-[15px] font-['Times_New_Roman'] text-[32px] placeholder:text-[#BCBCBC] focus:border-black focus:outline-none mr-[44px] max-[900px]:mr-0 max-[900px]:w-[calc(100%_-_15px)] max-[900px]:text-[26px]"
+            className="mr-11 h-12 w-72 border border-transparent bg-neutral-100 p-0 pl-4 font-serif text-title placeholder:text-neutral-400 focus:border-black focus:outline-none tablet:mr-0 tablet:w-[calc(100%_-_15px)] tablet:text-2xl"
           />
         </div>
 
@@ -137,11 +141,11 @@ export default function NewTimer({ addTimer, running, compact }: NewTimerProps) 
         </div>
 
         <button
-          className={`ml-[44px] h-[50px] cursor-pointer border border-black bg-transparent px-[20px] text-[22px] max-[900px]:ml-0 max-[900px]:mt-[20px] max-[900px]:w-[calc(100%_-_15px)] max-[900px]:p-0 ${
-            hasTime ? '' : 'cursor-default opacity-25'
+          className={`ml-11 h-12 cursor-pointer border border-black bg-transparent px-5 text-xl tablet:ml-0 tablet:mt-5 tablet:w-[calc(100%_-_15px)] tablet:p-0 ${
+            hasTime ? "" : "cursor-default opacity-25"
           }`}
         >
-          {' '}
+          {" "}
           Start timer
         </button>
       </form>
@@ -149,12 +153,12 @@ export default function NewTimer({ addTimer, running, compact }: NewTimerProps) 
       {/* shown on mobile when the form is hidden; reveals the form again */}
       <button
         onClick={() => setShow(true)}
-        className={`my-[20px] hidden h-[50px] w-[calc(100%_-_15px)] cursor-pointer border border-black bg-transparent text-[22px] ${
-          show ? '' : 'max-[900px]:block'
+        className={`my-5 hidden h-12 w-[calc(100%_-_15px)] cursor-pointer border border-black bg-transparent text-xl ${
+          show ? "" : "tablet:block"
         }`}
       >
         Add timer
       </button>
     </div>
-  )
+  );
 }

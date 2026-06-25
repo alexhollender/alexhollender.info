@@ -18,15 +18,15 @@ export default function WikiKids() {
     </StickyColumn>
     <section>
       <VideoEmbed url="https://www.youtube.com/watch?v=WvWXke-SeOQ" />
-      <div className="flex gap-[40px] max-[700px]:flex-col">
-        <div className="max-w-[400px] flex-1">
+      <div className="flex gap-10 compact:flex-col">
+        <div className="max-w-sm flex-1">
           <p><ProjectLink href="https://mobile-wikipedia.web.app/Hokusai" target="_blank" rel="external">Prototype A</ProjectLink></p>
           <video controls loop playsInline muted>
             <source src="https://alexhollender-97463.firebaseapp.com/static/media/mediaslider.73d46202499e5e0d38c1.webm" type="video/webm" />
             <source src="https://alexhollender-97463.firebaseapp.com/static/media/mediaslider.d16329cd661d264e7e94.mp4" type="video/mp4" />
           </video>
         </div>
-        <div className="max-w-[400px] flex-1">
+        <div className="max-w-sm flex-1">
           <p><ProjectLink href="https://mobile-stories-96b31.web.app/Machu_Picchu" target="_blank" rel="external">Prototype B</ProjectLink></p>
           <video controls loop playsInline muted>
             <source src="https://alexhollender-97463.firebaseapp.com/static/media/mediastory.363521841398c8e27c9a.webm" type="video/webm" />

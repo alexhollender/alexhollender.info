@@ -29,20 +29,20 @@ export default function Timer({
 
   return (
     <div
-      className={`relative min-h-[200px] w-[33%] border-b border-r border-[#cacaca] max-[900px]:min-h-0 max-[900px]:w-auto max-[900px]:border-r-0 max-[900px]:px-[20px] ${
-        isOn ? '' : 'bg-[#000] text-[#fff]'
+      className={`relative min-h-52 w-1/3 border-b border-r border-neutral-300 tablet:min-h-0 tablet:w-auto tablet:border-r-0 tablet:px-5 ${
+        isOn ? '' : 'bg-black text-white'
       }`}
     >
-      <p className="my-[1em] px-[20px] font-['Times_New_Roman'] text-[34px] max-[900px]:my-[20px] max-[900px]:px-0">
+      <p className="my-4 px-5 font-serif text-4xl tablet:my-5 tablet:px-0">
         {name ? name : 'untitled timer'}
       </p>
-      <time className="px-[20px] font-sans text-[44px] max-[900px]:my-[20px] max-[900px]:px-0 max-[900px]:text-[36px]">
+      <time className="px-5 font-sans text-5xl tablet:my-5 tablet:px-0 tablet:text-4xl">
         {formatTime(duration)}
       </time>
       <button
         onClick={() => deleteTimer(id)}
-        className={`absolute right-[35px] top-[35px] cursor-pointer border-0 bg-transparent text-[30px] max-[900px]:right-[20px] max-[900px]:top-[20px] ${
-          isOn ? '' : 'text-[#fff]'
+        className={`absolute right-9 top-9 cursor-pointer border-0 bg-transparent text-3xl tablet:right-5 tablet:top-5 ${
+          isOn ? '' : 'text-white'
         }`}
       >
         ✕

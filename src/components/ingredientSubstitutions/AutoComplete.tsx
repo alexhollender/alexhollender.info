@@ -90,7 +90,7 @@ export default function AutoComplete() {
         <div className="relative">
           {/* search icon */}
           <svg
-            className="pointer-events-none absolute left-[14px] top-1/2 -translate-y-1/2 max-[550px]:left-[12px] max-[550px]:h-4 max-[550px]:w-4"
+            className="pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 phone:left-3 phone:h-4 phone:w-4"
             width="18"
             height="18"
             viewBox="0 0 18 18"
@@ -114,7 +114,7 @@ export default function AutoComplete() {
               if (results.length > 0) setIsOpen(true)
               window.scrollTo({ top: 50, left: 0, behavior: 'smooth' })
             }}
-            className={`h-[50px] w-full rounded-[10px] border border-[#969696] bg-white pl-[46px] outline-none hover:border-black focus-visible:border-[blue] focus-visible:shadow-[inset_0_0_0_1px_blue] max-[550px]:pl-[38px] ${fontIngredient} ${
+            className={`h-12 w-full rounded-xl border border-gray-400 bg-white pl-11 outline-none hover:border-black focus-visible:border-blue-500 focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-blue-500 phone:pl-10 ${fontIngredient} ${
               showPanel ? 'rounded-b-none' : ''
             }`}
           />
@@ -122,7 +122,7 @@ export default function AutoComplete() {
       </div>
 
       {showPanel && (
-        <div className="absolute z-10 w-[calc(100%-2px)] rounded-b-[10px] border border-t-0 border-[#ccc] bg-white shadow-[0_2px_2px_rgb(0_0_0_/_10%)]">
+        <div className="absolute z-10 w-[calc(100%-2px)] rounded-b-xl border border-t-0 border-gray-300 bg-white shadow-sm">
           <ul>
             {results.map((item, i) => (
               <li
@@ -132,8 +132,8 @@ export default function AutoComplete() {
                   e.preventDefault()
                   select(item)
                 }}
-                className={`cursor-pointer px-[46px] py-[10px] max-[550px]:px-[36px] ${fontIngredient} ${
-                  activeIndex === i ? 'bg-[#ededed]' : ''
+                className={`cursor-pointer px-11 py-2.5 phone:px-9 ${fontIngredient} ${
+                  activeIndex === i ? 'bg-neutral-200' : ''
                 }`}
               >
                 {item.ingredientName}

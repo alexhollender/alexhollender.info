@@ -17,9 +17,9 @@ export default function Suggestions() {
           <Link
             key={id}
             href={`/ingredient-substitutions/${id}`}
-            className="hover:text-black hover:underline active:text-[lightgray]"
+            className="hover:text-black hover:underline active:text-neutral-300"
           >
-            <li className={`py-[6px] ${fontIngredient}`}>{name}</li>
+            <li className={`py-1.5 ${fontIngredient}`}>{name}</li>
           </Link>
         ))}
       </ul>

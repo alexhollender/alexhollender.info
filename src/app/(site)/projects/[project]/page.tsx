@@ -43,7 +43,7 @@ export default function Project({ params }: ProjectPageProps) {
   return (
     <main>
       {/* Page-level layout: 2-column grid above 1300px (first column sticks — see StickyColumn). */}
-      <div className="font-tobias two-col:grid two-col:grid-cols-[minmax(0,40%)_minmax(0,60%)] two-col:gap-[80px]">
+      <div className="font-tobias two-col:grid two-col:grid-cols-[minmax(0,40%)_minmax(0,60%)] two-col:gap-20">
         <ProjectComponent />
       </div>
       <Nav />

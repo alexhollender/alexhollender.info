@@ -11,7 +11,7 @@ export default function SubstituteItem({
   return (
     <li
       data-index={index}
-      className="border-b border-[#ccc] py-[16px] [&:has(.proportion)_.name]:mb-[6px] [&:has(.note)_.name]:mb-[6px] [&:has(.proportion):has(.note)_.proportion]:mb-[6px]"
+      className="border-b border-gray-300 py-4 [&:has(.proportion)_.name]:mb-1.5 [&:has(.note)_.name]:mb-1.5 [&:has(.proportion):has(.note)_.proportion]:mb-1.5"
     >
       {/* substituteName may contain <span> wrapping a parenthetical */}
       <p

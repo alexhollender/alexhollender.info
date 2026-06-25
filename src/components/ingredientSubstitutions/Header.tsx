@@ -2,14 +2,14 @@ import Link from 'next/link'
 
 export default function Header() {
   return (
-    <header className="border-b border-[#eee] px-[60px] py-[12px] max-[800px]:px-[20px]">
+    <header className="border-b border-neutral-200 px-16 py-3 narrow:px-5">
       <div className="flex items-center justify-between">
         <Link href="/ingredient-substitutions" className="no-underline">
-          <h1 className="font-serif text-[28px] text-[#595959] max-[800px]:w-[120px] max-[800px]:text-[20px]">
+          <h1 className="font-serif text-3xl text-neutral-600 narrow:w-32 narrow:text-xl">
             Ingredient substitutions
           </h1>
         </Link>
-        <h2 className="font-sans text-[18px] text-[#595959] max-[800px]:w-[70px] max-[800px]:text-right max-[800px]:text-[11px]">
+        <h2 className="font-sans text-lg text-neutral-600 narrow:w-16 narrow:text-right narrow:text-xs">
           substitutions for common ingredients
         </h2>
       </div>

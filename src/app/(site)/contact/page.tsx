@@ -4,7 +4,7 @@ import aboutMe from '@public/media/about/aboutme.png'
 
 export default function About() {
   return (
-    <section className="[&_img]:max-w-[420px]">
+    <section className="[&_img]:max-w-md">
       <Gallery />
       {/* <Image 
         src={aboutMe}
