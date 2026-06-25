@@ -1,7 +1,7 @@
 import "../../styles/globals.css";
 import Header from "@/components/header/Header";
 // import DarkModeToggle from '@/components/darkModeToggle/DarkModeToggle'
-import { vcrOsdMono, generalSans, tobias } from "@/utils/fonts";
+import { xanhMono, generalSans, tobias } from "@/utils/fonts";
 import type { ReactNode } from "react";
 
 export const metadata = {
@@ -23,7 +23,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
       lang="en"
-      className={`${generalSans.variable} ${tobias.variable} ${vcrOsdMono.variable}`}
+      className={`${generalSans.variable} ${tobias.variable} ${xanhMono.variable}`}
     >
       <body>
         <div className="px-[var(--margin-side)] pb-[var(--margin-bottom)] pt-[var(--margin-top)]">

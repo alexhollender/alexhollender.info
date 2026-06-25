@@ -1,9 +1,20 @@
 import localFont from 'next/font/local'
 
-export const vcrOsdMono = localFont({
-  src: '../../public/fonts/VCR_OSD_Mono.woff2',
+export const xanhMono = localFont({
+  src: [
+    {
+      path: '../../public/fonts/XanhMono-Regular.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../../public/fonts/XanhMono-Italic.woff2',
+      weight: '400',
+      style: 'italic',
+    },
+  ],
   display: 'swap',
-  variable: '--font-vcr',
+  variable: '--font-xanh-mono',
 });
 
 export const generalSans = localFont({

@@ -8,7 +8,7 @@ export default function Page() {
       <Home />
       <Nav />
       <Gallery />
-      <p className="font-vcr text-[14px]">© 2024 • you win some, you loose some</p>
+      <p className="font-xanh-mono text-[14px]">© 2024 • you win some, you loose some</p>
     </main>
   )
 }

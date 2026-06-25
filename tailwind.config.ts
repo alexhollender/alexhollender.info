@@ -12,7 +12,7 @@ const config: Config = {
       },
       fontFamily: {
         tobias: 'var(--font-tobias)',
-        vcr: 'var(--font-vcr)',
+        'xanh-mono': 'var(--font-xanh-mono)',
         generalsans: 'var(--font-generalSans)',
       },
       boxShadow: {
