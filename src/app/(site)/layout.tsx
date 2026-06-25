@@ -4,6 +4,7 @@ import "../../styles/dark.scss";
 import Header from "@/components/header/Header";
 // import DarkModeToggle from '@/components/darkModeToggle/DarkModeToggle'
 import { vcrOsdMono, generalSans, tobias } from "@/utils/fonts";
+import type { ReactNode } from "react";
 
 export const metadata = {
   title: "Alex Hollender — Product Design",
@@ -20,7 +21,7 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
       lang="en"

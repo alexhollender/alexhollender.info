@@ -1,18 +1,25 @@
 import dynamic from 'next/dynamic';
-import { projects } from "@/data/projects";
+import type { Metadata } from 'next';
+import { projects, type Project } from "@/data/projects";
 import s from './page.module.scss';
 import Nav from '@/components/nav/Nav';
 
-export function generateMetadata({ params }) {
-  const project = projects.find(p => p.id === params.project)
-  const image = [
-    {
-      url: project?.image?.src,
-      width: project?.image?.width,
-      height: project?.image?.height
-    },
-  ]
- 
+interface ProjectPageProps {
+  params: { project: string };
+}
+
+export function generateMetadata({ params }: ProjectPageProps): Metadata {
+  const project = projects.find(p => p.id === params.project) as Project
+  const image = project.image
+    ? [
+        {
+          url: project.image.src,
+          width: project.image.width,
+          height: project.image.height
+        },
+      ]
+    : undefined
+
   return {
     title: `${project.name} • Alex Hollender`,
     description: project.description,
@@ -30,8 +37,8 @@ export function generateMetadata({ params }) {
   }
 }
 
-export default function Project({ params }) {
-  const project = projects.find(p => p.id === params.project)
+export default function Project({ params }: ProjectPageProps) {
+  const project = projects.find(p => p.id === params.project) as Project
   const ProjectComponent = dynamic(() => import(`@/components/projects/${project.component}`));
 
   return (

@@ -6,8 +6,18 @@ import hwlzImg from "@public/media/projects/howlerz/howlerz_01.jpg"
 import oniaImg from "@public/media/projects/onia/onia_04.jpg"
 import cbdImg from "@public/media/projects/createbuilddestroy/createbuilddestroy_07_1.jpg"
 import miscImg from "@public/media/projects/miscellaneous/misc1_1350.jpg"
+import type { StaticImageData } from 'next/image'
 
-export const projects = [
+export interface Project {
+  id: string
+  name: string
+  description: string
+  image?: StaticImageData
+  img?: StaticImageData
+  component: string
+}
+
+export const projects: Project[] = [
   {
     id: 'wiki-2023',
     name: 'Wikipedia 2023 redesign',

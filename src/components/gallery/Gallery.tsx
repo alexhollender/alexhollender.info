@@ -2,12 +2,13 @@
 import { useState, useEffect } from "react"
 import { importAll, removeDuplicates } from "@/utils/mediaImports"
 import Image from "next/image"
+import type { StaticImageData } from "next/image"
 import s from './gallery.module.scss'
 const mediaArray = importAll(require.context('@public/media/home', true, /\.(png|jpe?g|gif|svg)$/))
 
 const media = removeDuplicates(mediaArray)
 
-function shuffleArray(array) {
+function shuffleArray<T>(array: T[]): T[] {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [array[i], array[j]] = [array[j], array[i]];
@@ -15,13 +16,13 @@ function shuffleArray(array) {
   return array;
 }
 
-function extractFileName(path) {
+function extractFileName(path: string): string {
   const matches = path.match(/\/([^\/]+?)\.\w+\.\w+$/);
   return matches ? matches[1] : '';
 }
 
 export default function Gallery() {
-  const [randomSeries, setRandomSeries] = useState([]);
+  const [randomSeries, setRandomSeries] = useState<number[]>([]);
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -33,8 +34,8 @@ export default function Gallery() {
     setCount((prevCount) => (prevCount + 1) % media.length);
   }
 
-  const currentImage = media[randomSeries[count]] || {};
-  const nextImage = media[randomSeries[(count + 1) % media.length]] || {};
+  const currentImage = media[randomSeries[count]] ?? ({} as StaticImageData);
+  const nextImage = media[randomSeries[(count + 1) % media.length]] ?? ({} as StaticImageData);
 
   return (
     <div className={`${s.gallery} gallery`}>

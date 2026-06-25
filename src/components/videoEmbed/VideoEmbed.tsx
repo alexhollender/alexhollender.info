@@ -2,7 +2,7 @@
 import dynamic from "next/dynamic";
 import s from './videoEmbed.module.scss'
 
-export default function VideoEmbed({ url }) {
+export default function VideoEmbed({ url }: { url: string }) {
   const ReactPlayer = dynamic(() => 
     import("react-player/lazy"), { ssr: false }
   );
