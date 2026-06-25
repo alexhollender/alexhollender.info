@@ -32,13 +32,19 @@ export default function CookingTimers() {
   const deleteTimer = (id: string) =>
     setTimers((prev) => prev.filter((t) => t.id !== id))
 
+  const compact = timers.length > 0
+
   return (
     <>
-      <div id="top" className={timers.length ? 'compact' : 'default'}>
-        <Header />
-        <NewTimer addTimer={addTimer} running={running} />
+      <div
+        className={`border-b border-[#cacaca] max-[900px]:px-[30px] max-[900px]:pb-0 ${
+          compact ? 'max-[900px]:pt-[20px]' : 'max-[900px]:pt-[30px]'
+        }`}
+      >
+        <Header compact={compact} />
+        <NewTimer addTimer={addTimer} running={running} compact={compact} />
       </div>
-      <div id="timersContainer">
+      <div className="flex grow flex-wrap max-[900px]:flex-col max-[900px]:flex-nowrap [&>div:nth-child(3n)]:grow">
         {timers.map((t) => (
           <Timer
             key={t.id}

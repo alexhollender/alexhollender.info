@@ -1,11 +1,10 @@
 import Gallery from '@/components/gallery/Gallery'
 import Image from 'next/image'
-import s from './page.module.scss'
 import aboutMe from '@public/media/about/aboutme.png'
 
 export default function About() {
   return (
-    <section className={s.about}>
+    <section className="[&_img]:max-w-[420px]">
       <Gallery />
       {/* <Image 
         src={aboutMe}

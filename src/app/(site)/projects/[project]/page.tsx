@@ -1,7 +1,6 @@
 import dynamic from 'next/dynamic';
 import type { Metadata } from 'next';
 import { projects, type Project } from "@/data/projects";
-import s from './page.module.scss';
 import Nav from '@/components/nav/Nav';
 
 interface ProjectPageProps {
@@ -43,7 +42,7 @@ export default function Project({ params }: ProjectPageProps) {
 
   return (
     <main>
-      <div className={s.project}>
+      <div className="font-tobias [&_a]:font-sans [&_div]:mb-[20px] [&_p]:mb-[20px] [&_p.noMargin]:mb-0 [&_.projectInfo]:font-sans [&_.projectInfo]:text-[14px] [&_.projectInfo>span]:block min-[1300px]:grid min-[1300px]:grid-cols-[minmax(0,40%)_minmax(0,60%)] min-[1300px]:gap-[80px] min-[1300px]:[&>section:first-child]:sticky min-[1300px]:[&>section:first-child]:top-[40px] min-[1300px]:[&>section:first-child]:h-fit">
         <ProjectComponent />
       </div>
       <Nav />

@@ -1,6 +1,4 @@
-import "../../styles/globals.scss";
-import "../../styles/variables.scss";
-import "../../styles/dark.scss";
+import "../../styles/globals.css";
 import Header from "@/components/header/Header";
 // import DarkModeToggle from '@/components/darkModeToggle/DarkModeToggle'
 import { vcrOsdMono, generalSans, tobias } from "@/utils/fonts";
@@ -28,7 +26,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       className={`${generalSans.variable} ${tobias.variable} ${vcrOsdMono.variable}`}
     >
       <body>
-        <div className="wrapper">
+        <div className="px-[var(--margin-side)] pb-[var(--margin-bottom)] pt-[var(--margin-top)]">
           <Header />
           {children}
         </div>

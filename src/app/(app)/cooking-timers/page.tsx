@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <div id="app">
+    <div className="flex min-h-screen flex-col">
       <CookingTimers />
     </div>
   )

@@ -1,9 +1,4 @@
-declare module '*.module.scss' {
-  const classes: { readonly [key: string]: string }
-  export default classes
-}
-
-declare module '*.scss'
+declare module '*.css'
 
 // webpack's require.context (used to bulk-import media folders)
 interface WebpackRequireContext {

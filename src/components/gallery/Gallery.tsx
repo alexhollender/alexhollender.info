@@ -3,7 +3,6 @@ import { useState, useEffect } from "react"
 import { importAll, removeDuplicates } from "@/utils/mediaImports"
 import Image from "next/image"
 import type { StaticImageData } from "next/image"
-import s from './gallery.module.scss'
 const mediaArray = importAll(require.context('@public/media/home', true, /\.(png|jpe?g|gif|svg)$/))
 
 const media = removeDuplicates(mediaArray)
@@ -38,7 +37,7 @@ export default function Gallery() {
   const nextImage = media[randomSeries[(count + 1) % media.length]] ?? ({} as StaticImageData);
 
   return (
-    <div className={`${s.gallery} gallery`}>
+    <div className="max-w-[500px] pb-[60px] pt-[30px]">
       {randomSeries.length > 0 && (
         <>
           <Image
@@ -46,6 +45,7 @@ export default function Gallery() {
             width={currentImage.width}
             height={currentImage.height}
             alt='personal image'
+            className="m-0 cursor-e-resize"
             priority
             onClick={imgNext}
           />

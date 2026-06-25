@@ -1,6 +1,5 @@
 import Link from "next/link"
 import VideoEmbed from "@/components/videoEmbed/VideoEmbed"
-import s from './wikiKids.module.scss'
 
 export default function WikiKids() {
 
@@ -17,7 +16,7 @@ export default function WikiKids() {
     </section>
     <section>
       <VideoEmbed url="https://www.youtube.com/watch?v=WvWXke-SeOQ" />
-      <div className={s.flex}>
+      <div className="flex gap-[40px] max-[700px]:flex-col [&_div]:max-w-[400px] [&_div]:flex-1 [&_span]:text-gray-text">
         <div>
           <p className="noMargin"><Link href="https://mobile-wikipedia.web.app/Hokusai" target="_blank" rel="external">Prototype A</Link></p>
           <video controls loop playsInline muted>
