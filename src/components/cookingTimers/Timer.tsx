@@ -33,7 +33,7 @@ export default function Timer({
         isOn ? '' : 'bg-[#000] text-[#fff]'
       }`}
     >
-      <p className="px-[20px] text-[34px] max-[900px]:my-[20px] max-[900px]:px-0">
+      <p className="my-[1em] px-[20px] font-['Times_New_Roman'] text-[34px] max-[900px]:my-[20px] max-[900px]:px-0">
         {name ? name : 'untitled timer'}
       </p>
       <time className="px-[20px] font-sans text-[44px] max-[900px]:my-[20px] max-[900px]:px-0 max-[900px]:text-[36px]">
