@@ -1,5 +1,6 @@
 import { importAll, removeDuplicates } from "@/utils/mediaImports"
 import ImageWrapper from "@/components/imageWrapper/ImageWrapper"
+import StickyColumn from "./StickyColumn"
 const mediaArray = importAll(require.context('@public/media/projects/miscellaneous', true, /\.(png|jpe?g|gif|svg)$/))
 
 export default function Miscellaneous() {
@@ -7,12 +8,12 @@ export default function Miscellaneous() {
 
   return (
     <>
-    <section>
-      <p>Other bits and pieces</p>
-    </section>
+    <StickyColumn>
+      <p className="mb-5">Other bits and pieces</p>
+    </StickyColumn>
     <section className="fillGrid">
       {media.map((item, index) =>
-        <ImageWrapper 
+        <ImageWrapper
           key={item.src}
           item={item}
           project="Miscellaneous work"

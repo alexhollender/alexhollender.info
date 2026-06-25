@@ -42,7 +42,8 @@ export default function Project({ params }: ProjectPageProps) {
 
   return (
     <main>
-      <div className="font-tobias [&_a]:font-sans [&_div]:mb-[20px] [&_p]:mb-[20px] [&_p.noMargin]:mb-0 [&_.projectInfo]:font-sans [&_.projectInfo]:text-sm [&_.projectInfo>span]:block min-[1300px]:grid min-[1300px]:grid-cols-[minmax(0,40%)_minmax(0,60%)] min-[1300px]:gap-[80px] min-[1300px]:[&>section:first-child]:sticky min-[1300px]:[&>section:first-child]:top-[40px] min-[1300px]:[&>section:first-child]:h-fit">
+      {/* Page-level layout: 2-column grid above 1300px (first column sticks — see StickyColumn). */}
+      <div className="font-tobias two-col:grid two-col:grid-cols-[minmax(0,40%)_minmax(0,60%)] two-col:gap-[80px]">
         <ProjectComponent />
       </div>
       <Nav />

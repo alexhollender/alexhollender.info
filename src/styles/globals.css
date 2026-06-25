@@ -23,7 +23,7 @@
     --margin-side: 80px;
   }
 }
-@media (max-width: 1300px) {
+@media (max-width: theme(screens.two-col)) {
   :root {
     --margin-side: 40px;
   }

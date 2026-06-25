@@ -23,6 +23,9 @@ const config: Config = {
       boxShadow: {
         media: '0 5px 15px 0 rgba(0,0,0,.1)',
       },
+      screens: {
+        'two-col': '1300px',
+      },
     },
   },
   plugins: [],
