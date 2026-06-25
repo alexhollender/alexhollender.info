@@ -15,6 +15,11 @@ const config: Config = {
         'xanh-mono': 'var(--font-xanh-mono)',
         generalsans: 'var(--font-generalSans)',
       },
+      fontSize: {
+        display: '38px',
+        title: '32px',
+        fine: '15px',
+      },
       boxShadow: {
         media: '0 5px 15px 0 rgba(0,0,0,.1)',
       },

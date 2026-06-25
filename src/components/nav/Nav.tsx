@@ -5,7 +5,7 @@ export default function Nav() {
 
   return(
     <div className="mt-[50px] border-t border-gray-text pb-[100px] pt-[50px]">
-      <h2 className="mb-[40px] text-[20px]">Selected Projects</h2>
+      <h2 className="mb-[40px] text-xl">Selected Projects</h2>
       <nav className="grid grid-cols-3 gap-[var(--grid-gap)] max-[1200px]:grid-cols-2 max-[700px]:grid-cols-1">
         {projects.map(({ id, name, description }) =>
           <Link

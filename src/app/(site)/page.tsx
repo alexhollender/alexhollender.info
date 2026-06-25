@@ -1,6 +1,6 @@
-import Gallery from '@/components/gallery/Gallery'
-import Home from '@/components/home/Home'
-import Nav from '@/components/nav/Nav'
+import Gallery from "@/components/gallery/Gallery";
+import Home from "@/components/home/Home";
+import Nav from "@/components/nav/Nav";
 
 export default function Page() {
   return (
@@ -8,7 +8,9 @@ export default function Page() {
       <Home />
       <Nav />
       <Gallery />
-      <p className="font-xanh-mono text-[14px]">© 2024 • you win some, you loose some</p>
+      <p className="font-xanh-mono text-base">
+        © {new Date().getFullYear()} • you win some, you loose some
+      </p>
     </main>
-  )
+  );
 }
