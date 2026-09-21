@@ -24,7 +24,12 @@ export default function Home() {
       <div>
         I am currently doing foundational product research and design around a
         new tool for recipe and food creators, tentatively called{" "}
-        <Link href="https://recipe.site/" target="_blank" rel="external">
+        <Link
+          href="https://recipe.site/"
+          target="_blank"
+          rel="external"
+          className="underline"
+        >
           <strong>Recipe.Site</strong>
         </Link>
         .
