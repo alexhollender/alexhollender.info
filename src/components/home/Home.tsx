@@ -81,14 +81,7 @@ export default function Home() {
       </div>
 
       <div className="mt-12 font-xanh-mono text-lg">
-        alexhollender@gmail.com —{" "}
-        <Link
-          href="https://www.linkedin.com/in/alex-hollender/"
-          target="_blank"
-          rel="external"
-        >
-          linkedin
-        </Link>
+        alexhollender@gmail.com
       </div>
     </div>
   );
