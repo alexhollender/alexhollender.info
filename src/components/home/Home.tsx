@@ -2,42 +2,57 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="max-w-5xl font-tobias text-xl leading-relaxed content:w-full [&_div]:mb-5">
+    <div className="max-w-xl font-tobias text-xl leading-relaxed content:w-full [&_div]:mb-5">
       <div>
-        Hey, I’m Alex. I’ve been a product designer for the past 10 years. Most
-        recently I led the{" "}
-        <Link href="/projects/wiki-2023">
-          <strong>Wikipedia Desktop Redesign</strong>
-        </Link>
-        , and before that I worked on Wikipedia’s mobile editing tools. During
-        my 5 years at Wikipedia I gained experience{" "}
-        <strong>designing for a global audience</strong> (300+ languages, every
-        device imaginable), <strong>designing for a large audience</strong> (~10
-        billion monthly pageviews), <strong>co-designing product</strong> (and
-        socio-technical processes) with an active community of users, editors, &
-        technical contributors, and{" "}
-        <strong>designing around user-generated content</strong>. I love web
-        development, and HTML/JS prototypes are an integral part of my design
-        process.
-      </div>
-
-      <div>
-        I am currently doing foundational product research and design around a
-        new tool for recipe and food creators, tentatively called{" "}
+        For the past few years I’ve been building and running{" "}
         <Link
           href="https://recipe.site/"
           target="_blank"
           rel="external"
           className="underline"
         >
-          <strong>Recipe.Site</strong>
+          Recipe.Site
+        </Link>
+        , a publishing tool for recipe creators that enables them to build{" "}
+        <Link
+          href="https://www.hwoolee.com"
+          target="_blank"
+          rel="external"
+          className="underline"
+        >
+          websites
+        </Link>{" "}
+        and{" "}
+        <Link
+          href="https://cookbooks.katieparla.com/cookbooks/rome"
+          target="_blank"
+          rel="external"
+          className="underline"
+        >
+          digital cookbooks
         </Link>
         .
       </div>
 
+      <div>
+        Prior to that, I led the{" "}
+        <Link href="/projects/wiki-2023" className="underline">
+          Wikipedia Desktop Redesign
+        </Link>
+        , and worked on Wikipedia’s mobile editing tools.
+      </div>
+
       <div className="[&>p]:hidden [&>input]:hidden [&>label]:cursor-pointer [&>label]:font-sans [&>label]:text-lg [&:has(input:checked)>label]:hidden [&:has(input:checked)>p]:block">
-        <label htmlFor="readMore">⇣ Read more</label>
+        <label htmlFor="readMore" className="underline">
+          [read more]
+        </label>
         <input type="checkbox" id="readMore" />
+
+        <p>
+          During my 5 years at Wikipedia I gained experience designing for a
+          large, global audience (300+ languages, every device imaginable, ~10
+          billion monthly pageviews).
+        </p>
 
         <p>
           Prior to Wikipedia I was the first designer at{" "}

@@ -5,7 +5,7 @@ import { xanhMono, generalSans, tobias } from "@/utils/fonts";
 import type { ReactNode } from "react";
 
 export const metadata = {
-  title: "Alex Hollender — Product Design",
+  title: "Alex Hollender — Product Design & Development",
   description: "Alex Hollender's design portfolio",
   metadataBase: new URL("https://alexhollender.info"),
   openGraph: {
