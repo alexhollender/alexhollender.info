@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="max-w-xl font-tobias text-xl leading-relaxed content:w-full [&_div]:mb-5">
-      <div>
+    <div className="max-w-xl font-tobias text-xl leading-relaxed content:w-full space-y-5">
+      <p>
         For the past few years I’ve been building and running{" "}
         <Link
           href="https://recipe.site/"
@@ -32,17 +32,17 @@ export default function Home() {
           digital cookbooks
         </Link>
         .
-      </div>
+      </p>
 
-      <div>
+      <p>
         Prior to that, I led the{" "}
         <Link href="/projects/wiki-2023" className="underline">
           Wikipedia Desktop Redesign
         </Link>
         , and worked on Wikipedia’s mobile editing tools.
-      </div>
+      </p>
 
-      <div className="[&>p]:hidden [&>input]:hidden [&>label]:cursor-pointer [&>label]:font-sans [&>label]:text-lg [&:has(input:checked)>label]:hidden [&:has(input:checked)>p]:block">
+      <div className="[&>p]:hidden [&>input]:hidden [&>label]:cursor-pointer [&>label]:font-sans [&>label]:text-lg [&:has(input:checked)>label]:hidden [&:has(input:checked)>p]:block space-y-5">
         <label htmlFor="readMore" className="underline">
           [read more]
         </label>
@@ -60,36 +60,61 @@ export default function Home() {
             href="https://www.newyorker.com/magazine/2016/03/07/altschools-disrupted-education"
             target="_blank"
             rel="external"
+            className="underline"
           >
-            <strong>AltSchool</strong>
+            AltSchool
           </Link>{" "}
-          (an EdTech startup) where I helped create a{" "}
-          <strong>Learning Management System</strong> that empowered teachers to
-          make more personalized curriculums and focus on whole-child education.
+          (an EdTech startup) where I helped create a Learning Management System
+          that empowered teachers to make more personalized curriculums and
+          focus on whole-child education.
+        </p>
+
+        <p>
           I’ve done product design and strategy consulting for several startups,
           such as{" "}
           <Link
             href="https://www.lyrahealth.com/"
             target="_blank"
             rel="external"
+            className="underline"
           >
-            <strong>Lyra Health</strong>
+            Lyra Health
           </Link>{" "}
           and{" "}
-          <Link href="https://amplify.com/" target="_blank" rel="external">
-            <strong>Amplify</strong>
+          <Link
+            href="https://amplify.com/"
+            target="_blank"
+            rel="external"
+            className="underline"
+          >
+            Amplify
           </Link>
           , and freelanced for product strategy agencies such as{" "}
-          <Link href="https://machine.io/" target="_blank" rel="external">
-            <strong>Machine</strong>
+          <Link
+            href="https://machine.io/"
+            target="_blank"
+            rel="external"
+            className="underline"
+          >
+            Machine
           </Link>{" "}
           and{" "}
-          <Link href="https://www.runyon.io/" target="_blank" rel="external">
-            <strong>Runyon</strong>
+          <Link
+            href="https://www.runyon.io/"
+            target="_blank"
+            rel="external"
+            className="underline"
+          >
+            Runyon
           </Link>
           . Before I got into product design I was the creative director at{" "}
-          <Link href="https://onia.com/" target="_blank" rel="external">
-            <strong>Onia</strong>
+          <Link
+            href="https://onia.com/"
+            target="_blank"
+            rel="external"
+            className="underline"
+          >
+            Onia
           </Link>
           , a high-end clothing brand based in NYC.
         </p>
